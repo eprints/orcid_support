@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://git.dev.ac.uk/id/epm/orcid'>
+  <epmid>orcid</epmid>
+  <uri>http://git.dev.ac.uk/id/epm/orcid</uri>
+  <documents>
+    <document>
+      <files>
+        <file>
+          <filename>epm/orcid/cfg/cfg.d/z_orcid_fields.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>501308574a828f450f8645e077f47b2c</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2262</filesize>
+        </file>
+        <file>
+          <filename>lang/en/phrases/orcid_fields.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>d77fd6a04e2fb4f0f7fa178fd58c630e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>676</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/EPMC/Orcid.pm</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>644cc91121697e6b997f1e7306e08c0a</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1219</filesize>
+        </file>
+        <file>
+          <filename>static/images/epm/orcid.png</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>8829</filesize>
+        </file>
+      </files>
+      <mime_type>inode/symlink</mime_type>
+      <format>other</format>
+      <main>static/images/epm/orcid.png</main>
+      <content>install</content>
+    </document>
+    <document>
+      <files>
+        <file>
+          <filename>static/images/epm/orcid.png</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>8829</filesize>
+        </file>
+      </files>
+      <format>image</format>
+      <main>static/images/epm/orcid.png</main>
+      <content>coverimage</content>
+    </document>
+  </documents>
+  <version>0.0.1</version>
+  <controller>EPMC::Orcid</controller>
+  <creators>
+    <item>
+      <name>
+        <family>Fyson</family>
+        <given>RW</given>
+      </name>
+      <id>rwf1v07@soton.ac.uk</id>
+    </item>
+  </creators>
+  <datestamp>2016-10-13 14:57:35</datestamp>
+  <title>ORCID</title>
+  <description>This is the description.</description>
+  <requirements>The following modules are required: X, Y, Z</requirements>
+  <icon>images/epm/orcid.png</icon>
+</epm>
