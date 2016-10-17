@@ -16,4 +16,6 @@
 <epp:phrase id="viewname_eprint_orcid">ORCID</epp:phrase>
 <epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
 
+<epp:phrase id="validate:invalid_orcid">Invalid ORCID</epp:phrase>
+
 </epp:phrases>
