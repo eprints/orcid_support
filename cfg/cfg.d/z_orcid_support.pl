@@ -16,10 +16,12 @@ Initial version
 
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
+$c->{plugins}{"Screen::Report::Orcid::Orcid"}{params}{disable} = 0;
 
 #---Users---#
 
 #Add orcid field to the user profile's
+
 @{$c->{fields}->{user}} = (@{$c->{fields}->{user}}, (
         {
                 'name' => 'orcid',
