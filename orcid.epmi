@@ -13,18 +13,18 @@
           <filesize>1410</filesize>
         </file>
         <file>
-          <filename>lang/en/phrases/orcid_fields.xml</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>d77fd6a04e2fb4f0f7fa178fd58c630e</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>676</filesize>
-        </file>
-        <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
           <mime_type>inode/symlink</mime_type>
           <hash>107d3f1b3bba3255c699dae5b6df187c</hash>
           <hash_type>MD5</hash_type>
           <filesize>487</filesize>
+        </file>
+        <file>
+          <filename>lang/en/phrases/orcid_fields.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>76560c62694fcaa75ec8b103be5873d2</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>798</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Orcid.pm</filename>
@@ -50,9 +50,9 @@
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>d5669de00f135dc7c4239ea575ab311b</hash>
+          <hash>92f975153cdadf7ede71da30509bb8bb</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1214</filesize>
+          <filesize>1687</filesize>
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
@@ -100,7 +100,7 @@
       <id>rwf1v07@soton.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2016-10-17 11:40:29</datestamp>
+  <datestamp>2016-10-17 14:09:40</datestamp>
   <title>ORCID Support</title>
   <description>This is the description.</description>
   <requirements>The following modules are required: X, Y, Z</requirements>
