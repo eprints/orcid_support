@@ -13,8 +13,7 @@
 
 <!--EPrints-->
 <epp:phrase id="eprint_fieldname_creators_orcid">ORCID</epp:phrase>
-
-
 <epp:phrase id="viewname_eprint_orcid">ORCID</epp:phrase>
+<epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
 
 </epp:phrases>
