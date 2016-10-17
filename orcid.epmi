@@ -13,6 +13,13 @@
           <filesize>1410</filesize>
         </file>
         <file>
+          <filename>lang/en/phrases/orcid_fields.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>76560c62694fcaa75ec8b103be5873d2</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>798</filesize>
+        </file>
+        <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
           <mime_type>inode/symlink</mime_type>
           <hash>107d3f1b3bba3255c699dae5b6df187c</hash>
@@ -20,11 +27,11 @@
           <filesize>487</filesize>
         </file>
         <file>
-          <filename>lang/en/phrases/orcid_fields.xml</filename>
+          <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>76560c62694fcaa75ec8b103be5873d2</hash>
+          <hash>92f975153cdadf7ede71da30509bb8bb</hash>
           <hash_type>MD5</hash_type>
-          <filesize>798</filesize>
+          <filesize>1687</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Orcid.pm</filename>
@@ -48,11 +55,11 @@
           <filesize>331</filesize>
         </file>
         <file>
-          <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
+          <filename>static/images/epm/orcid.png</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>92f975153cdadf7ede71da30509bb8bb</hash>
+          <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1687</filesize>
+          <filesize>8829</filesize>
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
@@ -61,17 +68,10 @@
           <hash_type>MD5</hash_type>
           <filesize>265</filesize>
         </file>
-        <file>
-          <filename>static/images/epm/orcid.png</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>8829</filesize>
-        </file>
       </files>
       <mime_type>inode/symlink</mime_type>
       <format>other</format>
-      <main>static/images/epm/orcid.png</main>
+      <main>workflows/user/orcid.xml</main>
       <content>install</content>
     </document>
     <document>
@@ -102,7 +102,13 @@
   </creators>
   <datestamp>2016-10-17 14:09:40</datestamp>
   <title>ORCID Support</title>
-  <description>This is the description.</description>
-  <requirements>The following modules are required: X, Y, Z</requirements>
+  <description>The ORCID Support plugin offers a basis for ORCID integration with an EPrints repository. At present the plugin adds an ORCID field to the user profiles along with an ORCID subfield to any specified EPrint fields such as &quot;Creator&quot; or &quot;Editor&quot;. 
+
+The fields added are of the type &quot;orcid&quot; and the new metafield that comes with the plugin has methods for rendering an ORCID as a link to the ORCID site as well as basic validation to ensure the ORCID is correct.
+
+A report, made available via the Generic Reporting Framework, highlights which users do and do not have an ORCID attached to their user profile.
+
+If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb@ecs.soton.ac.uk</description>
+  <requirements>The Generic Reporting Framework is required for the ORCID user report.</requirements>
   <icon>images/epm/orcid.png</icon>
 </epm>
