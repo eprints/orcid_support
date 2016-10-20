@@ -75,7 +75,7 @@ sub from_search_form
 	my( $self, $session, $prefix ) = @_;
 
 	my $val = $session->param( $prefix );
-	return unless defined $val;
+	return $val unless EPrints::Utils::is_set( $val );
 
 	# what could a user try to search with:
 	# Full URL: http://orcid.org/0000-1234-1234-123X
@@ -93,7 +93,7 @@ sub from_search_form
 	if( $val =~ m/\b(\d{4}\-?\d{4}\-?\d{4}\-?\d{3}(?:\d|X))/ )
 	{
 		return(
-               		$_, #orcid matched in capturing group above
+               		$1, #orcid matched in capturing group above
 			scalar($session->param( $prefix."_match" )),
 			scalar($session->param( $prefix."_merge" ))
 		);
