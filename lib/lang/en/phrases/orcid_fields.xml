@@ -17,5 +17,8 @@
 <epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
 
 <epp:phrase id="validate:invalid_orcid">Invalid ORCID</epp:phrase>
+<epp:phrase id="validate:invalid_orcid_checksum">Invalid ORCID checksum (last character)</epp:phrase>
+
+<epp:phrase id="searchfield:orcid_err">Incorrect format for ORCID</epp:phrase>
 
 </epp:phrases>
