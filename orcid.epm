@@ -42,9 +42,9 @@ OwogICAgICAgIH0KfQokYy0+e2ZpZWxkc30tPntlcHJpbnR9ID0gXEBuZXdGaWVsZHM7CgoK
         <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>76560c62694fcaa75ec8b103be5873d2</hash>
+          <hash>c976261c08b5a7e902811cda3f6eb96b</hash>
           <hash_type>MD5</hash_type>
-          <filesize>798</filesize>
+          <filesize>980</filesize>
           <data encoding='base64'>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
 RE9DVFlQRSBwaHJhc2VzIFNZU1RFTSAiZW50aXRpZXMuZHRkIj4KPGVwcDpwaHJhc2VzIHhtbG5z
 PSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiB4bWxuczplcHA9Imh0dHA6Ly9lcHJpbnRz
@@ -58,7 +58,11 @@ PgoKCjwhLS1FUHJpbnRzLS0+CjxlcHA6cGhyYXNlIGlkPSJlcHJpbnRfZmllbGRuYW1lX2NyZWF0
 b3JzX29yY2lkIj5PUkNJRDwvZXBwOnBocmFzZT4KPGVwcDpwaHJhc2UgaWQ9InZpZXduYW1lX2Vw
 cmludF9vcmNpZCI+T1JDSUQ8L2VwcDpwaHJhc2U+CjxlcHA6cGhyYXNlIGlkPSJsaWIvbWV0YWZp
 ZWxkOmpvaW5fb3JjaWQiPjwvZXBwOnBocmFzZT4KCjxlcHA6cGhyYXNlIGlkPSJ2YWxpZGF0ZTpp
-bnZhbGlkX29yY2lkIj5JbnZhbGlkIE9SQ0lEPC9lcHA6cGhyYXNlPgoKPC9lcHA6cGhyYXNlcz4K
+bnZhbGlkX29yY2lkIj5JbnZhbGlkIE9SQ0lEPC9lcHA6cGhyYXNlPgo8ZXBwOnBocmFzZSBpZD0i
+dmFsaWRhdGU6aW52YWxpZF9vcmNpZF9jaGVja3N1bSI+SW52YWxpZCBPUkNJRCBjaGVja3N1bSAo
+bGFzdCBjaGFyYWN0ZXIpPC9lcHA6cGhyYXNlPgoKPGVwcDpwaHJhc2UgaWQ9InNlYXJjaGZpZWxk
+Om9yY2lkX2VyciI+SW5jb3JyZWN0IGZvcm1hdCBmb3IgT1JDSUQ8L2VwcDpwaHJhc2U+Cgo8L2Vw
+cDpwaHJhc2VzPgo=
 </data>
         </file>
         <file>
@@ -81,9 +85,9 @@ PC9lcHA6cGhyYXNlPgoKPC9lcHA6cGhyYXNlcz4KCg==
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>92f975153cdadf7ede71da30509bb8bb</hash>
+          <hash>109b0764672447b4999d713d92a910e4</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1687</filesize>
+          <filesize>2718</filesize>
           <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpNZXRhRmllbGQ6Ok9yY2lkOwoKdXNlIHN0cmljdDsKdXNlIHdhcm5p
 bmdzOwp1c2UgRGF0YTo6RHVtcGVyOwp1c2UgRVByaW50czo6TWV0YUZpZWxkOjpUZXh0OwoKQkVH
 SU4gewogICAgICAgIG91ciggQElTQSApOwogICAgICAgIEBJU0EgPSBxdyggRVByaW50czo6TWV0
@@ -112,8 +116,26 @@ eX0tPnJ1bl90cmlnZ2VyKCBFUHJpbnRzOjpDb25zdDo6RVBfVFJJR0dFUl9WQUxJREFURV9GSUVM
 RCgpLAogICAgICAgICAgICAgICAgZmllbGQgPT4gJHNlbGYsCiAgICAgICAgICAgICAgICBkYXRh
 b2JqID0+ICRvYmplY3QsCiAgICAgICAgICAgICAgICB2YWx1ZSA9PiAkdmFsdWUsCiAgICAgICAg
 ICAgICAgICBwcm9ibGVtcyA9PiBcQHByb2JsZW1zLAogICAgICAgICk7CgogICAgICAgIHJldHVy
-biBAcHJvYmxlbXM7Cn0KCgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
-IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCjE7Cg==
+biBAcHJvYmxlbXM7Cn0KCnN1YiBmcm9tX3NlYXJjaF9mb3JtCnsKCW15KCAkc2VsZiwgJHNlc3Np
+b24sICRwcmVmaXggKSA9IEBfOwoKCW15ICR2YWwgPSAkc2Vzc2lvbi0+cGFyYW0oICRwcmVmaXgg
+KTsKCXJldHVybiAkdmFsIHVubGVzcyBFUHJpbnRzOjpVdGlsczo6aXNfc2V0KCAkdmFsICk7CgoJ
+IyB3aGF0IGNvdWxkIGEgdXNlciB0cnkgdG8gc2VhcmNoIHdpdGg6CgkjIEZ1bGwgVVJMOiBodHRw
+Oi8vb3JjaWQub3JnLzAwMDAtMTIzNC0xMjM0LTEyM1gKCSMgRnVsbCBVUkw6IGh0dHBzOi8vb3Jj
+aWQub3JnLzAwMDAtMTIzNC0xMjM0LTEyM1gKCSMgTmFtZXNwYWNlZDogb3JjaWQub3JnLzAwMDAt
+MTIzNC0xMjM0LTEyM1gKCSMgb3IJCTogb3JjaWQ6MDAwMC0xMjM0LTEyMzQtMTIzWAoJIyBvciB2
+YWx1ZQk6IDAwMDAtMTIzNC0xMjM0LTEyM1gKCSMgb3IgZXZlbgk6IDAwMDAxMjM0MTIzNDEyM1gK
+CSMgLi4uPyEKCSMKCSMgVGhlIFJlZ0V4cCBjb3VsZCBiZSBzb21ldGhpbmcgaG9ycmlibGUgbGlr
+ZToKCSMgbSNeKD86XHMqKD86aHR0cHM/OlwvXC8pP29yY2lkKD86XC5vcmdcL3w6KSk/KFxkezR9
+XC0/XGR7NH1cLT9cZHs0fVwtP1xkezN9KD86XGR8WCkpKD86XHMqKSQjICkKCSMgYnV0IEkgdGhp
+bmsgdXNpbmcgYSB3b3JkIGJvdW5kYXJ5IGJlZm9yZSB0aGUgT1JDSUQgaXRzZWxmIGlzIGNsZWFu
+ZXIgYW5kIGp1c3QgYXMgZ29vZC4uLgoJIwoJaWYoICR2YWwgPX4gbS9cYihcZHs0fSlcLT8oXGR7
+NH0pXC0/KFxkezR9KVwtPyhcZHszfSg/OlxkfFgpKS8gKQoJewoJCXJldHVybigKICAgICAgICAg
+ICAgICAgCQkiJDEtJDItJDMtJDQiLCAjb3JjaWQgbWF0Y2hlZCBpbiBjYXB0dXJpbmcgZ3JvdXAg
+YWJvdmUKCQkJc2NhbGFyKCRzZXNzaW9uLT5wYXJhbSggJHByZWZpeC4iX21hdGNoIiApKSwKCQkJ
+c2NhbGFyKCRzZXNzaW9uLT5wYXJhbSggJHByZWZpeC4iX21lcmdlIiApKQoJCSk7Cgl9CgoJcmV0
+dXJuKCB1bmRlZix1bmRlZix1bmRlZiwgJHNlc3Npb24tPmh0bWxfcGhyYXNlKCAic2VhcmNoZmll
+bGQ6b3JjaWRfZXJyIiApICk7Cn0KIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwoKMTsK
 </data>
         </file>
         <file>
@@ -558,9 +580,16 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
     <item>
       <name>
         <family>Fyson</family>
-        <given>RW</given>
+        <given>Will</given>
       </name>
       <id>rwf1v07@soton.ac.uk</id>
+    </item>
+    <item>
+      <name>
+        <family>Salter</family>
+        <given>John</given>
+      </name>
+      <id>j.salter@leeds.ac.uk</id>
     </item>
   </creators>
   <datestamp>2016-10-17 15:09:48</datestamp>

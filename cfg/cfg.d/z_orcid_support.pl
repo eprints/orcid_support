@@ -19,18 +19,27 @@ $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::Orcid"}{params}{disable} = 0;
 
 #---Users---#
-
-#Add orcid field to the user profile's
-
-@{$c->{fields}->{user}} = (@{$c->{fields}->{user}}, (
+#add orcid field to the user profile's 
+#but checking first to see if the field is already present in the user dataset before adding it 
+my $orcid_present = 0;
+for(@{$c->{fields}->{user}})
+{
+	if( $_->{name} eq "orcid" )
         {
-                'name' => 'orcid',
-                'type' => 'orcid'
-        }
-));
+		$orcid_present = 1
+	}
+}
+if( !$orcid_present )
+{
+	@{$c->{fields}->{user}} = (@{$c->{fields}->{user}}, (
+        	{
+                	'name' => 'orcid',
+	                'type' => 'orcid'
+        	}
+	));
+}
 
 #---EPrints---#
-
 #define the eprint fields we want to add an orcid to here... then run epadmin --update
 #$c->{orcid}->{eprint_fields} = ['creators', 'editors'];
 $c->{orcid}->{eprint_fields} = [];

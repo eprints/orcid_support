@@ -32,32 +32,17 @@ sub validate
 
 	my @problems;
 
-	foreach my $orcid ( @{$value} )
+	#orcid field may be used in either a array context or as single value
+	if( ref($value) eq 'ARRAY' )
 	{
-
-		#get orcid digits
-		$orcid =~ s/-//g;
-		my @digits = split //, $orcid;
-		if( scalar @digits == 16 ) #check there are 16 digits...
+		foreach my $orcid (@{$value})
 		{
-			#generate check digit
-			my $total = 0;
-			for my $i (0 .. (scalar @digits - 2))
-			{
-				$total = ($total + $digits[$i]) * 2;
-			}
-			my $rem = $total % 11;
-			my $res = (12 - $rem) % 11;
-			$res = $res == 10 ? "X" : $res;
-			if( $res != $digits[15] )
-			{
-				push @problems, $session->html_phrase( "validate:invalid_orcid" );
-			}
+			@problems = validate_orcid( $session, $orcid, @problems );
 		}
-		else
-		{
-			push @problems, $session->html_phrase( "validate:invalid_orcid" );
-		}		
+	}
+	else
+	{
+		@problems = validate_orcid( $session, $value, @problems );
 	}
 
         $self->{repository}->run_trigger( EPrints::Const::EP_TRIGGER_VALIDATE_FIELD(),
@@ -68,6 +53,36 @@ sub validate
         );
 
         return @problems;
+}
+
+sub validate_orcid
+{
+	my( $session, $orcid, @problems ) = @_;
+
+	$orcid =~ s/-//g;
+        my @digits = split //, $orcid;
+        if( scalar @digits == 16 ) #check there are 16 digits...
+        {
+                #generate check digit
+                my $total = 0;
+                for my $i (0 .. (scalar @digits - 2))
+                {
+                        $total = ($total + $digits[$i]) * 2;
+                }
+                my $rem = $total % 11;
+                my $res = (12 - $rem) % 11;
+                $res = $res == 10 ? "X" : $res;
+                        if( $res != $digits[15] )
+                {
+                        push @problems, $session->html_phrase( "validate:invalid_orcid" );
+                }
+        }
+        else
+        {
+                push @problems, $session->html_phrase( "validate:invalid_orcid" );
+        }
+	
+	return @problems;
 }
 
 sub from_search_form
@@ -90,10 +105,10 @@ sub from_search_form
 	# m#^(?:\s*(?:https?:\/\/)?orcid(?:\.org\/|:))?(\d{4}\-?\d{4}\-?\d{4}\-?\d{3}(?:\d|X))(?:\s*)$# )
 	# but I think using a word boundary before the ORCID itself is cleaner and just as good...
 	#
-	if( $val =~ m/\b(\d{4}\-?\d{4}\-?\d{4}\-?\d{3}(?:\d|X))/ )
+	if( $val =~ m/\b(\d{4})\-?(\d{4})\-?(\d{4})\-?(\d{3}(?:\d|X))/ )
 	{
 		return(
-               		$1, #orcid matched in capturing group above
+               		"$1-$2-$3-$4", #orcid matched in capturing group above
 			scalar($session->param( $prefix."_match" )),
 			scalar($session->param( $prefix."_merge" ))
 		);
