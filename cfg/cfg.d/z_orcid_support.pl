@@ -14,6 +14,8 @@ Initial version
 
 =cut
 
+use EPrints::ORCID::Utils;
+
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::Orcid"}{params}{disable} = 0;

@@ -3,11 +3,11 @@ package EPrints::MetaField::Orcid;
 use strict;
 use warnings;
 use Data::Dumper;
-use EPrints::MetaField::Text;
+use EPrints::MetaField::Id;
 
 BEGIN {
         our( @ISA );
-        @ISA = qw( EPrints::MetaField::Text );
+        @ISA = qw( EPrints::MetaField::Id );
 }
 
 sub render_single_value
@@ -31,6 +31,8 @@ sub validate
         my( $self, $session, $value, $object ) = @_;
 
 	my @problems;
+
+	return @problems unless EPrints::Utils::is_set( $value );
 
 	#orcid field may be used in either a array context or as single value
 	if( ref($value) eq 'ARRAY' )
@@ -59,10 +61,14 @@ sub validate_orcid
 {
 	my( $session, $orcid, @problems ) = @_;
 
-	$orcid =~ s/-//g;
-        my @digits = split //, $orcid;
-        if( scalar @digits == 16 ) #check there are 16 digits...
-        {
+	return @problems unless EPrints::Utils::is_set( $orcid );
+
+	my $size = length( $orcid );
+	if( $size == 19 )
+	{
+		$orcid =~ s/-//g;
+	        my @digits = split //, $orcid;
+
                 #generate check digit
                 my $total = 0;
                 for my $i (0 .. (scalar @digits - 2))
@@ -72,14 +78,14 @@ sub validate_orcid
                 my $rem = $total % 11;
                 my $res = (12 - $rem) % 11;
                 $res = $res == 10 ? "X" : $res;
-                        if( $res != $digits[15] )
+                if( $res != $digits[15] )
                 {
-                        push @problems, $session->html_phrase( "validate:invalid_orcid" );
+                        push @problems, $session->html_phrase( "validate:invalid_orcid_checksum" );
                 }
         }
         else
         {
-                push @problems, $session->html_phrase( "validate:invalid_orcid" );
+                push @problems, $session->html_phrase( "validate:invalid_orcid_format" );
         }
 	
 	return @problems;
@@ -92,23 +98,10 @@ sub from_search_form
 	my $val = $session->param( $prefix );
 	return $val unless EPrints::Utils::is_set( $val );
 
-	# what could a user try to search with:
-	# Full URL: http://orcid.org/0000-1234-1234-123X
-	# Full URL: https://orcid.org/0000-1234-1234-123X
-	# Namespaced: orcid.org/0000-1234-1234-123X
-	# or		: orcid:0000-1234-1234-123X
-	# or value	: 0000-1234-1234-123X
-	# or even	: 000012341234123X
-	# ...?!
-	#
-	# The RegExp could be something horrible like:
-	# m#^(?:\s*(?:https?:\/\/)?orcid(?:\.org\/|:))?(\d{4}\-?\d{4}\-?\d{4}\-?\d{3}(?:\d|X))(?:\s*)$# )
-	# but I think using a word boundary before the ORCID itself is cleaner and just as good...
-	#
-	if( $val =~ m/\b(\d{4})\-?(\d{4})\-?(\d{4})\-?(\d{3}(?:\d|X))/ )
+	if( $val = EPrints::ORCID::Utils::get_normalised_orcid( $val ) )
 	{
 		return(
-               		"$1-$2-$3-$4", #orcid matched in capturing group above
+               		"$val", #orcid matched in capturing group above
 			scalar($session->param( $prefix."_match" )),
 			scalar($session->param( $prefix."_merge" ))
 		);
