@@ -14,16 +14,12 @@ sub render_single_value
 {
 	my( $self, $session, $value ) = @_;
         
-	my $orcidDiv = $session->make_element( "div" );
        	my $url = "http://orcid.org/$value";
-        my $orcidLink = $session->make_element( "span" );
-        $orcidDiv->appendChild( $orcidLink );
  
-        my $link = $session->render_link( $url );
+        my $link = $session->render_link( $url, "_blank" );
         $link->appendChild( $session->make_text( $value ) );
-        $orcidLink->appendChild( $link );
         
-        return $orcidDiv;
+        return $link;
 }
 
 sub validate
