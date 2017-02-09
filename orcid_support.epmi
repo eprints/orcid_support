@@ -22,9 +22,9 @@
         <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>27b39b61a2ac091d2e01bbff08210a33</hash>
+          <hash>153ba38f088eb4013cafe82a43204e83</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1161</filesize>
+          <filesize>1167</filesize>
         </file>
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
