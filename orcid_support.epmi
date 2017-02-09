@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>1876bfb0375c68400d5cf920669fa57f</hash>
+          <hash>d1b03d107a15a806cf7a1918f76ccce4</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1907</filesize>
+          <filesize>1927</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
@@ -29,16 +29,16 @@
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>8086405efc8016805e7d808fe7d9bd14</hash>
+          <hash>fc13d48a4496e443b350c5aa6a52bf82</hash>
           <hash_type>MD5</hash_type>
           <filesize>777</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>2fb5d30b5aed6649612071d25ef3066a</hash>
+          <hash>1395970885a3b8db3376dfdaa3bdff09</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2827</filesize>
+          <filesize>2638</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
@@ -103,7 +103,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
@@ -127,7 +127,7 @@
 
 The fields added are of the type &quot;orcid&quot; and the new metafield that comes with the plugin has methods for rendering an ORCID as a link to the ORCID site as well as basic validation to ensure the ORCID is correct.
 
-A report, made available via the Generic Reporting Framework, highlights which users do and do not have an ORCID attached to their user profile.
+Reports, made available via the Generic Reporting Framework, highlights which users do and do not have an ORCID attached to their user profile and which EPrints have creators with ORCIDs.
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
   <requirements>The Generic Reporting Framework is required for the ORCID user report.</requirements>

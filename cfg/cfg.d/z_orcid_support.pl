@@ -15,6 +15,7 @@ Initial version
 =cut
 
 use EPrints::ORCID::Utils;
+use Data::Dumper;
 
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
@@ -53,9 +54,9 @@ my @oldFields = @{$c->{fields}->{eprint}};
 my @newFields = ();
 foreach my $field( @oldFields )
 {
-        if($field->{name} ~~ $c->{orcid}->{eprint_fields})
+	if( grep { $field->{name} eq $_ } @{$c->{orcid}->{eprint_fields}})
         {
-                my @fields = @{$field->{fields}};
+	        my @fields = @{$field->{fields}};
                 push @fields,
                         {
                                 sub_name => 'orcid',
