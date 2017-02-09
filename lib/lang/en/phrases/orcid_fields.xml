@@ -10,6 +10,7 @@
 <br/>Example: <span class="ep_form_example">0000-0003-1495-7122</span>
 </epp:phrase>
 
+<epp:phrase id="user:workflow:stage:orcid:title">ORCID</span>
 
 <!--EPrints-->
 <epp:phrase id="eprint_fieldname_creators_orcid">ORCID</epp:phrase>
