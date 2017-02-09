@@ -62,11 +62,18 @@
           <filesize>606</filesize>
         </file>
         <file>
-          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/Orcid.pm</filename>
+          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>d4c1657c9f50b56740045873177be2f7</hash>
+          <hash>9e3d7065749a71aa92758c18bb0f4670</hash>
           <hash_type>MD5</hash_type>
-          <filesize>331</filesize>
+          <filesize>3143</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>181754fb49902f25d8f7bc6a9ec5e05a</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1568</filesize>
         </file>
         <file>
           <filename>static/images/epm/orcid.png</filename>
