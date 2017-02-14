@@ -1,4 +1,4 @@
-package EPrints::Plugin::Screen::Report::Orcid::UserOrcid;
+package EPrints::Plugin::Screen::Report::Orcid::AllUsersOrcid;
 
 use EPrints::Plugin::Screen::Report::Orcid;
 our @ISA = ( 'EPrints::Plugin::Screen::Report::Orcid' );
@@ -13,36 +13,10 @@ sub new
 
         $self->{datasetid} = 'user';
         $self->{custom_order} = '-name';
-        $self->{report} = 'orcid-user';
+        $self->{report} = 'orcid-all-users';
 
         return $self;
 }
-
-sub items
-{
-	my( $self ) = @_;
-
-	if( defined $self->{processor}->{dataset} )
-        {
-                my $ds = $self->{processor}->{dataset};
-                my $list = $ds->search();
-                my @ids = ();
-
-		$list->map(sub{
-                        my($session, $dataset, $user) = @_;
-
-                        if( $user->is_set("orcid") )
-                        {
-                                push @ids, $user->id;
-                        }
-                });
-                my $results = $ds->list(\@ids);
-                return $results;
-
-        }
-        # we can't return an EPrints::List if {dataset} is not defined
-        return undef;
- }
 
 sub ajax_user
 {
@@ -73,12 +47,18 @@ sub ajax_user
 
 sub validate_dataobj
 {
+
         my( $self, $user ) = @_;
 
         my $repo = $self->{repository};
 
         my @problems;
 
+        #is there an ORCID?
+                if( !$user->is_set( "orcid" ) )
+        {
+                push @problems, $repo->phrase( "orcid_missing" );
+        }
         return @problems;
 }
                        

@@ -20,6 +20,7 @@ use Data::Dumper;
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::UserOrcid"}{params}{disable} = 0;
+$c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 1;
 $c->{plugins}{"Screen::Report::Orcid::CreatorsOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Export::Report::CSV::CreatorsOrcid"}{params}{disable} = 0;
 
