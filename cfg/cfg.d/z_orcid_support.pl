@@ -20,7 +20,7 @@ use Data::Dumper;
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::UserOrcid"}{params}{disable} = 0;
-$c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 1;
+$c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::CreatorsOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Export::Report::CSV::CreatorsOrcid"}{params}{disable} = 0;
 
@@ -66,13 +66,65 @@ foreach my $field( @oldFields )
                                 allow_null => 1,
                         };
                 $field->{fields} = \@fields;
-                push @newFields, $field;
-        }
-        else
-        {
-                push @newFields, $field;
-        }
+
+		#add a new render method to the name field
+		foreach my $f( @{$field->{fields}})
+		{
+			if( $f->{sub_name} eq 'name' && !EPrints::Utils::is_set( $f->{render_value} ) )
+			{
+				$f->{render_value} = 'render_orcid_link';			
+			}
+		}
+	}	
+        push @newFields, $field;
 }
 $c->{fields}->{eprint} = \@newFields;
 
+#ORCID rendering
+$c->{render_orcid_link} = sub
+{
+	my( $session, $field, $value, $alllangs, $nolink, $object ) = @_;
 
+	my $pvals = $object->get_value( $field->{parent_name} );
+
+	return $field->render_value_actual( $session, $value, $alllangs, $nolink, $object ) if scalar( @$value ) != scalar( @$pvals );
+
+	my $html = $session->make_doc_fragment();
+
+	for(my $i=0; $i<scalar(@$value); ++$i )
+        {
+                my $sv = $value->[$i];
+                my $pv = $pvals->[$i]; # parent value
+		unless( $i == 0 )
+                {
+                        my $phrase = "lib/metafield:join_".$field->get_type;
+                        my $basephrase = $phrase;
+                        if( $i == scalar(@$value)-1 && $session->get_lang->has_phrase( $basephrase.".last" ) )
+                        {
+                                $phrase = $basephrase.".last";
+                        }
+                        $html->appendChild( $session->html_phrase( $phrase ) );
+                }
+
+		# render internal names in span so they can be highlighted using css
+		my $frag = $session->make_doc_fragment;
+                my $putnamehere = $frag;
+		if( EPrints::Utils::is_set( $pv->{orcid} ) )
+                {
+			my $link = $session->make_element( "a", href => "http://orcid.org/".$pv->{orcid}, target => "_blank" );		
+			$putnamehere = $link;
+		}
+
+		$putnamehere->appendChild(
+                        $field->render_value_no_multiple(
+                        $session,
+                        $sv,
+                        $alllangs,
+                        $nolink,
+                        $object ) );
+
+
+		$html->appendChild( $putnamehere );
+	}
+	return $html;
+}
