@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>015d87087713896dc6b95cd6b9891734</hash>
+          <hash>4e6b6d17b8f068baa97588539dec3b0f</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3804</filesize>
+          <filesize>3840</filesize>
           <data encoding='base64'>PXBvZAoKPWhlYWQxIE9yY2lkIFN1cHBvcnQKCk9SQ0lEIFN1cHBvcnQgUGx1Z2luCgoyMDE2IEVQ
 cmludHMgU2VydmljZXMsIFVuaXZlcnNpdHkgb2YgU291dGhhbXB0b24KCj1oZWFkMiBDaGFuZ2Vz
 CgowLjAuMSBXaWxsIEZ5c29uIDxyd2YxdjA3QHNvdG9uLmFjLnVrPgoKSW5pdGlhbCB2ZXJzaW9u
@@ -31,53 +31,54 @@ eyRjLT57ZmllbGRzfS0+e3VzZXJ9fSwgKAogICAgICAgIAl7CiAgICAgICAgICAgICAgICAJJ25h
 bWUnID0+ICdvcmNpZCcsCgkgICAgICAgICAgICAgICAgJ3R5cGUnID0+ICdvcmNpZCcKICAgICAg
 ICAJfQoJKSk7Cn0KCiMtLS1FUHJpbnRzLS0tIwojZGVmaW5lIHRoZSBlcHJpbnQgZmllbGRzIHdl
 IHdhbnQgdG8gYWRkIGFuIG9yY2lkIHRvIGhlcmUuLi4gdGhlbiBydW4gZXBhZG1pbiAtLXVwZGF0
-ZQojJGMtPntvcmNpZH0tPntlcHJpbnRfZmllbGRzfSA9IFsnY3JlYXRvcnMnLCAnZWRpdG9ycydd
-OwokYy0+e29yY2lkfS0+e2VwcmludF9maWVsZHN9ID0gW107CgojYWRkIG9yY2lkIGFzIGEgc3Vi
-ZmllbGQgdG8gYXBwcm9wcmlhdGUgZXByaW50IGZpZWxkcwpteSBAb2xkRmllbGRzID0gQHskYy0+
-e2ZpZWxkc30tPntlcHJpbnR9fTsKbXkgQG5ld0ZpZWxkcyA9ICgpOwpmb3JlYWNoIG15ICRmaWVs
-ZCggQG9sZEZpZWxkcyApCnsKCWlmKCBncmVwIHsgJGZpZWxkLT57bmFtZX0gZXEgJF8gfSBAeyRj
-LT57b3JjaWR9LT57ZXByaW50X2ZpZWxkc319KQogICAgICAgIHsKCSAgICAgICAgbXkgQGZpZWxk
-cyA9IEB7JGZpZWxkLT57ZmllbGRzfX07CiAgICAgICAgICAgICAgICBwdXNoIEBmaWVsZHMsCiAg
-ICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBz
-dWJfbmFtZSA9PiAnb3JjaWQnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGUg
-PT4gJ29yY2lkJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpbnB1dF9jb2xzID0+
-IDE5LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFsbG93X251bGwgPT4gMSwKICAg
-ICAgICAgICAgICAgICAgICAgICAgfTsKICAgICAgICAgICAgICAgICRmaWVsZC0+e2ZpZWxkc30g
-PSBcQGZpZWxkczsKCgkJI2FkZCBhIG5ldyByZW5kZXIgbWV0aG9kIHRvIHRoZSBuYW1lIGZpZWxk
-CgkJZm9yZWFjaCBteSAkZiggQHskZmllbGQtPntmaWVsZHN9fSkKCQl7CgkJCWlmKCAkZi0+e3N1
-Yl9uYW1lfSBlcSAnbmFtZScgJiYgIUVQcmludHM6OlV0aWxzOjppc19zZXQoICRmLT57cmVuZGVy
-X3ZhbHVlfSApICkKCQkJewoJCQkJJGYtPntyZW5kZXJfdmFsdWV9ID0gJ3JlbmRlcl9vcmNpZF9s
-aW5rJzsJCQkKCQkJfQoJCX0KCX0JCiAgICAgICAgcHVzaCBAbmV3RmllbGRzLCAkZmllbGQ7Cn0K
-JGMtPntmaWVsZHN9LT57ZXByaW50fSA9IFxAbmV3RmllbGRzOwoKI09SQ0lEIHJlbmRlcmluZwok
-Yy0+e3JlbmRlcl9vcmNpZF9saW5rfSA9IHN1Ygp7CglteSggJHNlc3Npb24sICRmaWVsZCwgJHZh
-bHVlLCAkYWxsbGFuZ3MsICRub2xpbmssICRvYmplY3QgKSA9IEBfOwoKCW15ICRwdmFscyA9ICRv
-YmplY3QtPmdldF92YWx1ZSggJGZpZWxkLT57cGFyZW50X25hbWV9ICk7CgoJcmV0dXJuICRmaWVs
-ZC0+cmVuZGVyX3ZhbHVlX2FjdHVhbCggJHNlc3Npb24sICR2YWx1ZSwgJGFsbGxhbmdzLCAkbm9s
-aW5rLCAkb2JqZWN0ICkgaWYgc2NhbGFyKCBAJHZhbHVlICkgIT0gc2NhbGFyKCBAJHB2YWxzICk7
-CgoJbXkgJGh0bWwgPSAkc2Vzc2lvbi0+bWFrZV9kb2NfZnJhZ21lbnQoKTsKCglmb3IobXkgJGk9
-MDsgJGk8c2NhbGFyKEAkdmFsdWUpOyArKyRpICkKICAgICAgICB7CiAgICAgICAgICAgICAgICBt
-eSAkc3YgPSAkdmFsdWUtPlskaV07CiAgICAgICAgICAgICAgICBteSAkcHYgPSAkcHZhbHMtPlsk
-aV07ICMgcGFyZW50IHZhbHVlCgkJdW5sZXNzKCAkaSA9PSAwICkKICAgICAgICAgICAgICAgIHsK
-ICAgICAgICAgICAgICAgICAgICAgICAgbXkgJHBocmFzZSA9ICJsaWIvbWV0YWZpZWxkOmpvaW5f
-Ii4kZmllbGQtPmdldF90eXBlOwogICAgICAgICAgICAgICAgICAgICAgICBteSAkYmFzZXBocmFz
-ZSA9ICRwaHJhc2U7CiAgICAgICAgICAgICAgICAgICAgICAgIGlmKCAkaSA9PSBzY2FsYXIoQCR2
-YWx1ZSktMSAmJiAkc2Vzc2lvbi0+Z2V0X2xhbmctPmhhc19waHJhc2UoICRiYXNlcGhyYXNlLiIu
-bGFzdCIgKSApCiAgICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAkcGhyYXNlID0gJGJhc2VwaHJhc2UuIi5sYXN0IjsKICAgICAgICAgICAgICAg
-ICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAkaHRtbC0+YXBwZW5kQ2hpbGQoICRz
-ZXNzaW9uLT5odG1sX3BocmFzZSggJHBocmFzZSApICk7CiAgICAgICAgICAgICAgICB9CgoJCSMg
-cmVuZGVyIGludGVybmFsIG5hbWVzIGluIHNwYW4gc28gdGhleSBjYW4gYmUgaGlnaGxpZ2h0ZWQg
-dXNpbmcgY3NzCgkJbXkgJGZyYWcgPSAkc2Vzc2lvbi0+bWFrZV9kb2NfZnJhZ21lbnQ7CiAgICAg
-ICAgICAgICAgICBteSAkcHV0bmFtZWhlcmUgPSAkZnJhZzsKCQlpZiggRVByaW50czo6VXRpbHM6
-OmlzX3NldCggJHB2LT57b3JjaWR9ICkgKQogICAgICAgICAgICAgICAgewoJCQlteSAkbGluayA9
-ICRzZXNzaW9uLT5tYWtlX2VsZW1lbnQoICJhIiwgaHJlZiA9PiAiaHR0cDovL29yY2lkLm9yZy8i
-LiRwdi0+e29yY2lkfSwgdGFyZ2V0ID0+ICJfYmxhbmsiICk7CQkKCQkJJHB1dG5hbWVoZXJlID0g
-JGxpbms7CgkJfQoKCQkkcHV0bmFtZWhlcmUtPmFwcGVuZENoaWxkKAogICAgICAgICAgICAgICAg
-ICAgICAgICAkZmllbGQtPnJlbmRlcl92YWx1ZV9ub19tdWx0aXBsZSgKICAgICAgICAgICAgICAg
-ICAgICAgICAgJHNlc3Npb24sCiAgICAgICAgICAgICAgICAgICAgICAgICRzdiwKICAgICAgICAg
-ICAgICAgICAgICAgICAgJGFsbGxhbmdzLAogICAgICAgICAgICAgICAgICAgICAgICAkbm9saW5r
-LAogICAgICAgICAgICAgICAgICAgICAgICAkb2JqZWN0ICkgKTsKCgoJCSRodG1sLT5hcHBlbmRD
-aGlsZCggJHB1dG5hbWVoZXJlICk7Cgl9CglyZXR1cm4gJGh0bWw7Cn0K
+ZQokYy0+e29yY2lkfS0+e2VwcmludF9maWVsZHN9ID0gWydjcmVhdG9ycycsICdlZGl0b3JzJ107
+CgojYWRkIG9yY2lkIGFzIGEgc3ViZmllbGQgdG8gYXBwcm9wcmlhdGUgZXByaW50IGZpZWxkcwpm
+b3JlYWNoIG15ICRmaWVsZCggQHskYy0+e2ZpZWxkc30tPntlcHJpbnR9fSApCnsKCWlmKCBncmVw
+IHsgJGZpZWxkLT57bmFtZX0gZXEgJF8gfSBAeyRjLT57b3JjaWR9LT57ZXByaW50X2ZpZWxkc319
+KQogICAgICAgIHsKCQkjY2hlY2sgaWYgZmllbGQgYWxyZWFkeSBoYXMgYW4gb3JjaWQgc3ViZmll
+bGQKCQkkb3JjaWRfcHJlc2VudCA9IDA7CgkJZm9yKEB7JGZpZWxkLT57ZmllbGRzfX0pCgkJewoJ
+CSAgICAgICAgaWYoICRfLT57bmFtZX0gZXEgIm9yY2lkIiApCgkJICAgICAgICB7CgkJICAgICAg
+ICAgICAgICAgICRvcmNpZF9wcmVzZW50ID0gMTsKCQkJCWxhc3Q7CgkJICAgICAgICB9CgkJfQoJ
+CQoJCSNhZGQgb3JjaWQgc3ViZmllbGQKCQlpZiggISRvcmNpZF9wcmVzZW50ICkKCQl7CgkJCUB7
+JGZpZWxkLT57ZmllbGRzfX0gPSAoQHskZmllbGQtPntmaWVsZHN9fSwgKAoJCQkJewogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIAlzdWJfbmFtZSA9PiAnb3JjaWQnLAoJICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICB0eXBlID0+ICdvcmNpZCcsCiAgICAgICAgCQkgICAgICAg
+ICAgICAgICAgaW5wdXRfY29scyA9PiAxOSwKICAgICAgICAgICAgICAgICAgICAgICAgCSAJYWxs
+b3dfbnVsbCA9PiAxLAoJICAgICAgICAgICAgICAgICAgICAgICAgfQoJCQkpKTsKCQkKCQkJI2Fk
+ZCBhIG5ldyByZW5kZXIgbWV0aG9kIHRvIHRoZSBuYW1lIGZpZWxkCgkJCWZvcmVhY2ggbXkgJGYo
+IEB7JGZpZWxkLT57ZmllbGRzfX0pCgkJCXsKCQkJCWlmKCAkZi0+e3N1Yl9uYW1lfSBlcSAnbmFt
+ZScgJiYgIUVQcmludHM6OlV0aWxzOjppc19zZXQoICRmLT57cmVuZGVyX3ZhbHVlfSApICkKCQkJ
+CXsKCQkJCQkkZi0+e3JlbmRlcl92YWx1ZX0gPSAncmVuZGVyX29yY2lkX2xpbmsnOwkJCQoJCQkJ
+fQoJCQl9CgkJfQoJfQkKfQoKI09SQ0lEIHJlbmRlcmluZwokYy0+e3JlbmRlcl9vcmNpZF9saW5r
+fSA9IHN1Ygp7CglteSggJHNlc3Npb24sICRmaWVsZCwgJHZhbHVlLCAkYWxsbGFuZ3MsICRub2xp
+bmssICRvYmplY3QgKSA9IEBfOwoKCW15ICRwdmFscyA9ICRvYmplY3QtPmdldF92YWx1ZSggJGZp
+ZWxkLT57cGFyZW50X25hbWV9ICk7CgoJcmV0dXJuICRmaWVsZC0+cmVuZGVyX3ZhbHVlX2FjdHVh
+bCggJHNlc3Npb24sICR2YWx1ZSwgJGFsbGxhbmdzLCAkbm9saW5rLCAkb2JqZWN0ICkgaWYgc2Nh
+bGFyKCBAJHZhbHVlICkgIT0gc2NhbGFyKCBAJHB2YWxzICk7CgoJbXkgJGh0bWwgPSAkc2Vzc2lv
+bi0+bWFrZV9kb2NfZnJhZ21lbnQoKTsKCglmb3IobXkgJGk9MDsgJGk8c2NhbGFyKEAkdmFsdWUp
+OyArKyRpICkKICAgICAgICB7CiAgICAgICAgICAgICAgICBteSAkc3YgPSAkdmFsdWUtPlskaV07
+CiAgICAgICAgICAgICAgICBteSAkcHYgPSAkcHZhbHMtPlskaV07ICMgcGFyZW50IHZhbHVlCgkJ
+dW5sZXNzKCAkaSA9PSAwICkKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAg
+ICAgbXkgJHBocmFzZSA9ICJsaWIvbWV0YWZpZWxkOmpvaW5fIi4kZmllbGQtPmdldF90eXBlOwog
+ICAgICAgICAgICAgICAgICAgICAgICBteSAkYmFzZXBocmFzZSA9ICRwaHJhc2U7CiAgICAgICAg
+ICAgICAgICAgICAgICAgIGlmKCAkaSA9PSBzY2FsYXIoQCR2YWx1ZSktMSAmJiAkc2Vzc2lvbi0+
+Z2V0X2xhbmctPmhhc19waHJhc2UoICRiYXNlcGhyYXNlLiIubGFzdCIgKSApCiAgICAgICAgICAg
+ICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAkcGhyYXNlID0g
+JGJhc2VwaHJhc2UuIi5sYXN0IjsKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAg
+ICAgICAgICAgICAgICAkaHRtbC0+YXBwZW5kQ2hpbGQoICRzZXNzaW9uLT5odG1sX3BocmFzZSgg
+JHBocmFzZSApICk7CiAgICAgICAgICAgICAgICB9CgoJCSMgcmVuZGVyIGludGVybmFsIG5hbWVz
+IGluIHNwYW4gc28gdGhleSBjYW4gYmUgaGlnaGxpZ2h0ZWQgdXNpbmcgY3NzCgkJbXkgJGZyYWcg
+PSAkc2Vzc2lvbi0+bWFrZV9kb2NfZnJhZ21lbnQ7CiAgICAgICAgICAgICAgICBteSAkcHV0bmFt
+ZWhlcmUgPSAkZnJhZzsKCQlpZiggRVByaW50czo6VXRpbHM6OmlzX3NldCggJHB2LT57b3JjaWR9
+ICkgKQogICAgICAgICAgICAgICAgewoJCQlteSAkbGluayA9ICRzZXNzaW9uLT5tYWtlX2VsZW1l
+bnQoICJhIiwgaHJlZiA9PiAiaHR0cDovL29yY2lkLm9yZy8iLiRwdi0+e29yY2lkfSwgdGFyZ2V0
+ID0+ICJfYmxhbmsiICk7CQkKCQkJJHB1dG5hbWVoZXJlID0gJGxpbms7CgkJfQoKCQkkcHV0bmFt
+ZWhlcmUtPmFwcGVuZENoaWxkKAogICAgICAgICAgICAgICAgICAgICAgICAkZmllbGQtPnJlbmRl
+cl92YWx1ZV9ub19tdWx0aXBsZSgKICAgICAgICAgICAgICAgICAgICAgICAgJHNlc3Npb24sCiAg
+ICAgICAgICAgICAgICAgICAgICAgICRzdiwKICAgICAgICAgICAgICAgICAgICAgICAgJGFsbGxh
+bmdzLAogICAgICAgICAgICAgICAgICAgICAgICAkbm9saW5rLAogICAgICAgICAgICAgICAgICAg
+ICAgICAkb2JqZWN0ICkgKTsKCgoJCSRodG1sLT5hcHBlbmRDaGlsZCggJHB1dG5hbWVoZXJlICk7
+Cgl9CglyZXR1cm4gJGh0bWw7Cn0K
 </data>
         </file>
         <file>
@@ -197,7 +198,7 @@ c3Bvc2UoICR1bCApOwoKJHNlc3Npb24tPnRlcm1pbmF0ZTsKCg==
         </file>
         <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>161170bc91168d976c3558f6cae1d91f</hash>
           <hash_type>MD5</hash_type>
           <filesize>1235</filesize>
@@ -227,7 +228,7 @@ b3IgT1JDSUQ8L2VwcDpwaHJhc2U+Cgo8L2VwcDpwaHJhc2VzPgo=
         </file>
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>29024af881a1a92d8bd959194a192cef</hash>
           <hash_type>MD5</hash_type>
           <filesize>889</filesize>
@@ -251,7 +252,7 @@ bGUuPC9lcHA6cGhyYXNlPgoKPC9lcHA6cGhyYXNlcz4KCg==
         </file>
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>1395970885a3b8db3376dfdaa3bdff09</hash>
           <hash_type>MD5</hash_type>
           <filesize>2638</filesize>
@@ -306,7 +307,7 @@ IyMjIyMjIyMjIyMKCjE7Cg==
         </file>
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>404df9cac359b521fc503639a92bc1e6</hash>
           <hash_type>MD5</hash_type>
           <filesize>792</filesize>
@@ -328,10 +329,10 @@ biAiJDEtJDItJDMtJDQiOwoJfQoJZWxzZSAKCXsKCQlyZXR1cm4gMDsKCX0KfQoKMTsK
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>644cc91121697e6b997f1e7306e08c0a</hash>
+          <mime_type>text/plain</mime_type>
+          <hash>dd9827ca245d60074dffc3bf3b558207</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1219</filesize>
+          <filesize>1222</filesize>
           <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVBNQzo6T3JjaWQ7CgpASVNBID0gKCAn
 RVByaW50czo6UGx1Z2luOjpTY3JlZW46OkVQTUMnICk7Cgp1c2Ugc3RyaWN0OwoKc3ViIG5ldwp7
 CiAgICBteSggJGNsYXNzLCAlcGFyYW1zICkgPSBAXzsKCiAgICBteSAkc2VsZiA9ICRjbGFzcy0+
@@ -347,18 +348,18 @@ ID0gRVByaW50czo6WE1MOjpwYXJzZV94bWwoICRyZXBvLT5jb25maWcoICJsaWJfcGF0aCIgKS4i
 L3dvcmtmbG93cy91c2VyL29yY2lkLnhtbCIgKTsKICAgIEVQcmludHM6OlhNTDo6YWRkX3RvX3ht
 bCggJGZpbGVuYW1lLCAkaW5zZXJ0LT5kb2N1bWVudEVsZW1lbnQoKSwgJHNlbGYtPntwYWNrYWdl
 X25hbWV9ICk7CiAgICAKICAgICRzZWxmLT5yZWxvYWRfY29uZmlnIGlmICEkc2tpcF9yZWxvYWQ7
-Cn0KICAgIApzdWIgYWN0aW9uX2Rpc2FibGUKewoJbXkoICRzZWxmLCAkc2tpcF9yZWxvYWQgKSA9
-IEBfOwogICAgCiAgICAkc2VsZi0+U1VQRVI6OmFjdGlvbl9kaXNhYmxlKCAkc2tpcF9yZWxvYWQg
-KTsKICAgIG15ICRyZXBvID0gJHNlbGYtPntyZXBvc2l0b3J5fTsKCiAgICBteSAkZmlsZW5hbWUg
-PSAkcmVwby0+Y29uZmlnKCAiY29uZmlnX3BhdGgiICkuIi93b3JrZmxvd3MvdXNlci9kZWZhdWx0
-LnhtbCI7CiAgICBFUHJpbnRzOjpYTUw6OnJlbW92ZV9wYWNrYWdlX2Zyb21feG1sKCAkZmlsZW5h
-bWUsICRzZWxmLT57cGFja2FnZV9uYW1lfSApOwoKICAgICRzZWxmLT5yZWxvYWRfY29uZmlnIGlm
-ICEkc2tpcF9yZWxvYWQ7Cn0KCjE7Cg==
+Cn0KICAgIApzdWIgYWN0aW9uX2Rpc2FibGUKewogICAgbXkoICRzZWxmLCAkc2tpcF9yZWxvYWQg
+KSA9IEBfOwogICAgCiAgICAkc2VsZi0+U1VQRVI6OmFjdGlvbl9kaXNhYmxlKCAkc2tpcF9yZWxv
+YWQgKTsKICAgIG15ICRyZXBvID0gJHNlbGYtPntyZXBvc2l0b3J5fTsKCiAgICBteSAkZmlsZW5h
+bWUgPSAkcmVwby0+Y29uZmlnKCAiY29uZmlnX3BhdGgiICkuIi93b3JrZmxvd3MvdXNlci9kZWZh
+dWx0LnhtbCI7CiAgICBFUHJpbnRzOjpYTUw6OnJlbW92ZV9wYWNrYWdlX2Zyb21feG1sKCAkZmls
+ZW5hbWUsICRzZWxmLT57cGFja2FnZV9uYW1lfSApOwoKICAgICRzZWxmLT5yZWxvYWRfY29uZmln
+IGlmICEkc2tpcF9yZWxvYWQ7Cn0KCjE7Cg==
 </data>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>64094c9bdd2da374899c24ff05453d6e</hash>
           <hash_type>MD5</hash_type>
           <filesize>606</filesize>
@@ -377,7 +378,7 @@ W10gfTsKCiAgICAgICAgcmV0dXJuIFxAZmlsdGVyczsKfQoK
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/AllUsersOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>f78e82ff1d4c698b55e29b4ff9e0d956</hash>
           <hash_type>MD5</hash_type>
           <filesize>1577</filesize>
@@ -413,7 +414,7 @@ IEBwcm9ibGVtczsKfQogICAgICAgICAgICAgICAgICAgICAgIAo=
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>9e3d7065749a71aa92758c18bb0f4670</hash>
           <hash_type>MD5</hash_type>
           <filesize>3143</filesize>
@@ -477,7 +478,7 @@ ICAgICAgIAo=
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>419997da42a904d3b2e7c855a78795e3</hash>
           <hash_type>MD5</hash_type>
           <filesize>2068</filesize>
@@ -522,7 +523,7 @@ ICAgICAgICAgICAgICAgCg==
         </file>
         <file>
           <filename>static/images/epm/orcid.png</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>image/png</mime_type>
           <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
           <hash_type>MD5</hash_type>
           <filesize>8829</filesize>
@@ -685,7 +686,7 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>811c2964fb050bd30e6a267a50a27b74</hash>
           <hash_type>MD5</hash_type>
           <filesize>265</filesize>
@@ -697,7 +698,7 @@ Lz48L2NvbXBvbmVudD4KPC9zdGFnZT4KCjwvd29ya2Zsb3c+Cg==
 </data>
         </file>
       </files>
-      <mime_type>inode/symlink</mime_type>
+      <mime_type>application/xml</mime_type>
       <format>other</format>
       <main>workflows/user/orcid.xml</main>
       <content>install</content>
@@ -706,7 +707,7 @@ Lz48L2NvbXBvbmVudD4KPC9zdGFnZT4KCjwvd29ya2Zsb3c+Cg==
       <files>
         <file>
           <filename>static/images/epm/orcid.png</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>image/png</mime_type>
           <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
           <hash_type>MD5</hash_type>
           <filesize>8829</filesize>
@@ -873,7 +874,7 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
       <content>coverimage</content>
     </document>
   </documents>
-  <version>0.0.5</version>
+  <version>0.0.6</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
@@ -901,6 +902,5 @@ Reports, made available via the Generic Reporting Framework, highlights which us
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
   <requirements>The Generic Reporting Framework is required for the ORCID user report.</requirements>
-  <home_page>http://github.com/your/project</home_page>
   <icon>images/epm/orcid.png</icon>
 </epm>

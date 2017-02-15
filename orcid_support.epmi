@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>015d87087713896dc6b95cd6b9891734</hash>
+          <hash>4e6b6d17b8f068baa97588539dec3b0f</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3804</filesize>
+          <filesize>3840</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
@@ -28,83 +28,83 @@
         </file>
         <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>161170bc91168d976c3558f6cae1d91f</hash>
           <hash_type>MD5</hash_type>
           <filesize>1235</filesize>
         </file>
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>29024af881a1a92d8bd959194a192cef</hash>
           <hash_type>MD5</hash_type>
           <filesize>889</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>1395970885a3b8db3376dfdaa3bdff09</hash>
           <hash_type>MD5</hash_type>
           <filesize>2638</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>404df9cac359b521fc503639a92bc1e6</hash>
           <hash_type>MD5</hash_type>
           <filesize>792</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>644cc91121697e6b997f1e7306e08c0a</hash>
+          <mime_type>text/plain</mime_type>
+          <hash>dd9827ca245d60074dffc3bf3b558207</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1219</filesize>
+          <filesize>1222</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>64094c9bdd2da374899c24ff05453d6e</hash>
           <hash_type>MD5</hash_type>
           <filesize>606</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/AllUsersOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>f78e82ff1d4c698b55e29b4ff9e0d956</hash>
           <hash_type>MD5</hash_type>
           <filesize>1577</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>9e3d7065749a71aa92758c18bb0f4670</hash>
           <hash_type>MD5</hash_type>
           <filesize>3143</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>419997da42a904d3b2e7c855a78795e3</hash>
           <hash_type>MD5</hash_type>
           <filesize>2068</filesize>
         </file>
         <file>
           <filename>static/images/epm/orcid.png</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>image/png</mime_type>
           <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
           <hash_type>MD5</hash_type>
           <filesize>8829</filesize>
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>application/xml</mime_type>
           <hash>811c2964fb050bd30e6a267a50a27b74</hash>
           <hash_type>MD5</hash_type>
           <filesize>265</filesize>
         </file>
       </files>
-      <mime_type>inode/symlink</mime_type>
+      <mime_type>application/xml</mime_type>
       <format>other</format>
       <main>workflows/user/orcid.xml</main>
       <content>install</content>
@@ -113,7 +113,7 @@
       <files>
         <file>
           <filename>static/images/epm/orcid.png</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>image/png</mime_type>
           <hash>550ba3e4b5670cd5bf4a9ef92d556d54</hash>
           <hash_type>MD5</hash_type>
           <filesize>8829</filesize>
@@ -124,7 +124,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>0.0.5</version>
+  <version>0.0.6</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
@@ -152,6 +152,5 @@ Reports, made available via the Generic Reporting Framework, highlights which us
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
   <requirements>The Generic Reporting Framework is required for the ORCID user report.</requirements>
-  <home_page>http://github.com/your/project</home_page>
   <icon>images/epm/orcid.png</icon>
 </epm>

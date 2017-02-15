@@ -47,38 +47,47 @@ if( !$orcid_present )
 
 #---EPrints---#
 #define the eprint fields we want to add an orcid to here... then run epadmin --update
-#$c->{orcid}->{eprint_fields} = ['creators', 'editors'];
-$c->{orcid}->{eprint_fields} = [];
+$c->{orcid}->{eprint_fields} = ['creators', 'editors'];
 
 #add orcid as a subfield to appropriate eprint fields
-my @oldFields = @{$c->{fields}->{eprint}};
-my @newFields = ();
-foreach my $field( @oldFields )
+foreach my $field( @{$c->{fields}->{eprint}} )
 {
 	if( grep { $field->{name} eq $_ } @{$c->{orcid}->{eprint_fields}})
         {
-	        my @fields = @{$field->{fields}};
-                push @fields,
-                        {
-                                sub_name => 'orcid',
-                                type => 'orcid',
-                                input_cols => 19,
-                                allow_null => 1,
-                        };
-                $field->{fields} = \@fields;
-
-		#add a new render method to the name field
-		foreach my $f( @{$field->{fields}})
+		#check if field already has an orcid subfield
+		$orcid_present = 0;
+		for(@{$field->{fields}})
 		{
-			if( $f->{sub_name} eq 'name' && !EPrints::Utils::is_set( $f->{render_value} ) )
+		        if( $_->{name} eq "orcid" )
+		        {
+		                $orcid_present = 1;
+				last;
+		        }
+		}
+		
+		#add orcid subfield
+		if( !$orcid_present )
+		{
+			@{$field->{fields}} = (@{$field->{fields}}, (
+				{
+                                	sub_name => 'orcid',
+	                                type => 'orcid',
+        		                input_cols => 19,
+                        	 	allow_null => 1,
+	                        }
+			));
+		
+			#add a new render method to the name field
+			foreach my $f( @{$field->{fields}})
 			{
-				$f->{render_value} = 'render_orcid_link';			
+				if( $f->{sub_name} eq 'name' && !EPrints::Utils::is_set( $f->{render_value} ) )
+				{
+					$f->{render_value} = 'render_orcid_link';			
+				}
 			}
 		}
 	}	
-        push @newFields, $field;
 }
-$c->{fields}->{eprint} = \@newFields;
 
 #ORCID rendering
 $c->{render_orcid_link} = sub
