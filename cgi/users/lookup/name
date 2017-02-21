@@ -85,12 +85,13 @@ while( my @row = $sth->fetchrow_array )
 	{
 		$frag->appendChild( $session->make_text( " " ) );
 		$frag->appendChild( $id_field->render_single_value( $session, $id ) );
-		if( EPrints::Utils::is_set( $orcid ) )
-		{
-			$frag->appendChild( $session->make_text( " (" ) );
-			$frag->appendChild( $orcid_field->render_single_value( $session, $orcid ) );
-			$frag->appendChild( $session->make_text( ")" ) );
-		}
+	}
+
+	if( EPrints::Utils::is_set( $orcid ) )
+	{
+		$frag->appendChild( $session->make_text( " (" ) );
+		$frag->appendChild( $orcid_field->render_single_value( $session, $orcid ) );
+		$frag->appendChild( $session->make_text( ")" ) );
 	}
 
 	$frag->appendChild( $session->html_phrase( 'cgi/lookup/name:authored', count => $session->make_text( $cnt ) ) );
