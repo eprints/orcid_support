@@ -58,7 +58,7 @@ foreach my $field( @{$c->{fields}->{eprint}} )
 		$orcid_present = 0;
 		for(@{$field->{fields}})
 		{
-		        if( $_->{name} eq "orcid" )
+		        if( defined $_->{name} && $_->{name} eq "orcid" )
 		        {
 		                $orcid_present = 1;
 				last;
