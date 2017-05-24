@@ -12,7 +12,7 @@ sub new
 
         my $self = $class->SUPER::new( %params );
 
-        $self->{datasetid} = 'eprint';
+        $self->{datasetid} = 'archive';
         $self->{custom_order} = '-title/creators_name';
         $self->{report} = 'orcid-creators';
 
@@ -23,10 +23,10 @@ sub items
 {
         my( $self ) = @_;
 
-        if( defined $self->{processor}->{dataset} )
+	my $list = $self->SUPER::items();
+
+        if( defined $list )
         {
-                my $ds = $self->{processor}->{dataset};
-                my $list = $ds->search();
                 my @ids = ();
 
                 $list->map(sub{
@@ -37,6 +37,7 @@ sub items
                                 push @ids, $eprint->id;
                         }
                 });
+		my $ds = $self->{session}->dataset( $self->{datasetid} );
                 my $results = $ds->list(\@ids);
                 return $results;
 

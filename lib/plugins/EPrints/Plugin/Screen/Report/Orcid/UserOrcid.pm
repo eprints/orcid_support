@@ -22,10 +22,10 @@ sub items
 {
 	my( $self ) = @_;
 
-	if( defined $self->{processor}->{dataset} )
+	my $list = $self->SUPER::items();
+
+	if( defined $list )
         {
-                my $ds = $self->{processor}->{dataset};
-                my $list = $ds->search();
                 my @ids = ();
 
 		$list->map(sub{
@@ -36,6 +36,7 @@ sub items
                                 push @ids, $user->id;
                         }
                 });
+		my $ds = $self->{session}->dataset( $self->{datasetid} );
                 my $results = $ds->list(\@ids);
                 return $results;
 
