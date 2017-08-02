@@ -6,18 +6,18 @@
     <document>
       <files>
         <file>
+          <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>8a9172836f5d68b264920bed9d93b410</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>6206</filesize>
+        </file>
+        <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
           <mime_type>text/plain</mime_type>
           <hash>79f8d82a4a36fb4a59865e27f676fd77</hash>
           <hash_type>MD5</hash_type>
           <filesize>857</filesize>
-        </file>
-        <file>
-          <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>f62185b2cc63152092f4da7d874f0f24</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>6166</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cgi/users/lookup/name</filename>
@@ -36,9 +36,9 @@
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>29024af881a1a92d8bd959194a192cef</hash>
+          <hash>8a5762c59c881c1ef6f26847cd57d8b1</hash>
           <hash_type>MD5</hash_type>
-          <filesize>889</filesize>
+          <filesize>949</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
@@ -78,16 +78,9 @@
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/AllUsersOrcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>f78e82ff1d4c698b55e29b4ff9e0d956</hash>
+          <hash>3b97156890aab23a9e6bfe9d78d686f4</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1577</filesize>
-        </file>
-        <file>
-          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>656e1f0b8ea9c6e12336e3d5ef472252</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>2042</filesize>
+          <filesize>1826</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
@@ -95,6 +88,13 @@
           <hash>adf9f68fb12f13f5b7e7ee785d9c17c1</hash>
           <hash_type>MD5</hash_type>
           <filesize>3118</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>3db3fd3b392bc3de10e7ed1da421e4cb</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2178</filesize>
         </file>
         <file>
           <filename>static/images/epm/orcid.png</filename>
@@ -131,7 +131,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>0.0.7</version>
+  <version>1.0</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
@@ -158,6 +158,6 @@ The fields added are of the type &quot;orcid&quot; and the new metafield that co
 Reports, made available via the Generic Reporting Framework, highlights which users do and do not have an ORCID attached to their user profile and which EPrints have creators with ORCIDs.
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
-  <requirements>The Generic Reporting Framework is required for the ORCID user report.</requirements>
+  <requirements>The Generic Reporting Framework is required for the ORCID reports.</requirements>
   <icon>images/epm/orcid.png</icon>
 </epm>

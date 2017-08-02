@@ -15,6 +15,16 @@ sub new
         $self->{custom_order} = '-name';
         $self->{report} = 'orcid-user';
 
+	$self->{exportfields} = {
+                orcid_user => [ qw(
+			userid
+			username
+			email
+			name
+			orcid
+                )],
+	};
+
         return $self;
 }
 

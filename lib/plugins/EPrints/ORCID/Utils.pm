@@ -20,6 +20,7 @@ sub get_normalised_orcid
 	# but I think using a word boundary before the ORCID itself is cleaner and just as good...
 	#
 	
+	return 0 unless EPrints::Utils::is_set( $value );
 	if( $value =~ m/\b(\d{4})\-?(\d{4})\-?(\d{4})\-?(\d{3}(?:\d|X))/ )
         {
 		return "$1-$2-$3-$4";
