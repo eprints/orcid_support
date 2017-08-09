@@ -15,7 +15,6 @@ Initial version
 =cut
 
 use EPrints::ORCID::Utils;
-use Data::Dumper;
 
 #Enable the plugin!
 $c->{plugins}{"Orcid"}{params}{disable} = 0;
@@ -58,7 +57,7 @@ foreach my $field( @{$c->{fields}->{eprint}} )
 		$orcid_present = 0;
 		for(@{$field->{fields}})
 		{
-			if( EPrints::Utils::is_set( $_->{name} ) && $_->{name} eq "orcid" )		     
+		        if( $_->{name} eq "orcid" )
 		        {
 		                $orcid_present = 1;
 				last;
@@ -75,68 +74,10 @@ foreach my $field( @{$c->{fields}->{eprint}} )
         		                input_cols => 19,
                         	 	allow_null => 1,
 	                        }
-			));
-		
-			#add a new render method to the name field
-			foreach my $f( @{$field->{fields}})
-			{
-				if( $f->{sub_name} eq 'name' && !EPrints::Utils::is_set( $f->{render_value} ) )
-				{
-					$f->{render_value} = 'render_orcid_link';			
-				}
-			}
+			));	
 		}
 	}	
 }
-
-#ORCID rendering
-$c->{render_orcid_link} = sub
-{
-	my( $session, $field, $value, $alllangs, $nolink, $object ) = @_;
-
-	my $pvals = $object->get_value( $field->{parent_name} );
-
-	return $field->render_value_actual( $session, $value, $alllangs, $nolink, $object ) if scalar( @$value ) != scalar( @$pvals );
-
-	my $html = $session->make_doc_fragment();
-
-	for(my $i=0; $i<scalar(@$value); ++$i )
-        {
-                my $sv = $value->[$i];
-                my $pv = $pvals->[$i]; # parent value
-		unless( $i == 0 )
-                {
-                        my $phrase = "lib/metafield:join_".$field->get_type;
-                        my $basephrase = $phrase;
-                        if( $i == scalar(@$value)-1 && $session->get_lang->has_phrase( $basephrase.".last" ) )
-                        {
-                                $phrase = $basephrase.".last";
-                        }
-                        $html->appendChild( $session->html_phrase( $phrase ) );
-                }
-
-		# render internal names in span so they can be highlighted using css
-		my $frag = $session->make_doc_fragment;
-                my $putnamehere = $frag;
-		if( EPrints::Utils::is_set( $pv->{orcid} ) )
-                {
-			my $link = $session->make_element( "a", href => "http://orcid.org/".$pv->{orcid}, target => "_blank" );		
-			$putnamehere = $link;
-		}
-
-		$putnamehere->appendChild(
-                        $field->render_value_no_multiple(
-                        $session,
-                        $sv,
-                        $alllangs,
-                        $nolink,
-                        $object ) );
-
-
-		$html->appendChild( $putnamehere );
-	}
-	return $html;
-};
 
 #automatic update of eprint creator field
 $c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
@@ -219,3 +160,66 @@ $c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
 
 	
 }, priority => 50 );
+
+
+#Rendering ORCIDs
+{
+package EPrints::Script::Compiled;
+use strict;
+ 
+sub run_people_with_orcids
+{
+	my( $self, $state, $value ) = @_;
+ 
+	my $session = $state->{session};
+	my $r = $state->{session}->make_doc_fragment;
+ 
+	my $creators = $value->[0];
+ 
+	foreach my $i (0..$#$creators)
+	{
+ 
+		my $creator = @$creators[$i];
+ 
+		if( $i > 0 )
+		{
+			#not first item (or only one item)
+			if( $i == $#$creators )
+			{
+				#last item
+				$r->appendChild( $session->make_text( " and " ) );
+			}
+			else
+			{
+			        $r->appendChild( $session->make_text( ", " ) );
+			}
+		}
+ 
+		my $person_span = $session->make_element( "span", "class" => "person" );
+		$person_span->appendChild( $session->render_name( $creator->{name} ) );
+ 
+		my $orcid = $creator->{orcid};
+		if( defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
+		{
+			my $orcid_link = $session->make_element( "a", 
+				"class" => "orcid",
+				"href" => "http://orcid.org/$1",
+				"target" => "_blank",
+			 );
+			$orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png" ) );
+
+			my $orcid_span = $session->make_element( "span", "class" => "orcid-tooltip" );
+	
+			$orcid_span->appendChild( $session->make_text( "ORCID: " ) );
+			$orcid_span->appendChild( $session->make_text( $1 ) );
+			$orcid_link->appendChild( $orcid_span );			 
+
+			$person_span->appendChild( $session->make_text( " " ) );
+			$person_span->appendChild( $orcid_link );
+		}
+		$r->appendChild( $person_span );
+	}
+	return [ $r, "XHTML" ];
+}
+
+}
