@@ -1,0 +1,55 @@
+.person:hover{
+	border-bottom: 1px dashed #a6ce39;
+}
+	
+.orcid a:hover{
+        color: #a6ce39;
+}
+
+.orcid-icon {}
+
+.orcid-icon img{
+	vertical-align: text-bottom; margin: 0 4px 0 2px; 
+}
+
+.orcid{
+	position: relative;
+}
+
+.orcid:hover .orcid-tooltip{
+	visibility: visible;
+	opacity: 1;
+}
+
+.orcid img{
+	vertical-align: bottom;
+}
+
+.orcid-tooltip{
+	visibility: hidden;
+	position: absolute;
+	left: -85px;
+	bottom: -35px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s;
+	background-color: #A6CE39;
+	border: 1px solid #000000;
+	white-space: pre;
+	max-width: none;
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.orcid-tooltip::before {
+    content: "";
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #000000 transparent;
+}
