@@ -6,7 +6,10 @@
         color: #a6ce39;
 }
 
-.orcid-icon {}
+.orcid-icon{
+	vertical-align: bottom;
+	padding-right: 5px;
+}
 
 .orcid-icon img{
 	vertical-align: text-bottom; margin: 0 4px 0 2px; 

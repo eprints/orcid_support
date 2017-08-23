@@ -17,7 +17,8 @@ sub render_single_value
        	my $url = "http://orcid.org/$value";
  
         my $link = $session->render_link( $url, "_blank" );
-        $link->appendChild( $session->make_text( $value ) );
+	$link->appendChild( $session->make_element( "img", src => "/images/orcid_16x16.png", class => "orcid-icon" ) );
+        $link->appendChild( $session->make_text( "orcid.org/$value" ) );
         
         return $link;
 }
