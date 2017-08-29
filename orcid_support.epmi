@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>8a9172836f5d68b264920bed9d93b410</hash>
+          <hash>d64daff44b913665003cd17bccfdd2e1</hash>
           <hash_type>MD5</hash_type>
-          <filesize>6206</filesize>
+          <filesize>5816</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
@@ -131,7 +131,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.0</version>
+  <version>1.1</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
