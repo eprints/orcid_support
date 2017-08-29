@@ -27,6 +27,13 @@
           <filesize>4706</filesize>
         </file>
         <file>
+          <filename>epm/orcid_support/lib/static/style/auto/orcid_support.css</filename>
+          <mime_type>text/x-asm</mime_type>
+          <hash>6372497ac5b8eaa1f71b14a63247568c</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>911</filesize>
+        </file>
+        <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
           <mime_type>application/xml</mime_type>
           <hash>161170bc91168d976c3558f6cae1d91f</hash>
