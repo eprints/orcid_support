@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>d64daff44b913665003cd17bccfdd2e1</hash>
+          <hash>09a23f6b91c9b04549c9e1294ca653f7</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5816</filesize>
+          <filesize>5882</filesize>
           <data encoding='base64'>PXBvZAoKPWhlYWQxIE9yY2lkIFN1cHBvcnQKCk9SQ0lEIFN1cHBvcnQgUGx1Z2luCgoyMDE2IEVQ
 cmludHMgU2VydmljZXMsIFVuaXZlcnNpdHkgb2YgU291dGhhbXB0b24KCj1oZWFkMiBDaGFuZ2Vz
 CgowLjAuMSBXaWxsIEZ5c29uIDxyd2YxdjA3QHNvdG9uLmFjLnVrPgoKSW5pdGlhbCB2ZXJzaW9u
@@ -111,9 +111,10 @@ cmNpZF9zcGFuLT5hcHBlbmRDaGlsZCggJHNlc3Npb24tPm1ha2VfdGV4dCggIk9SQ0lEOiAiICkg
 KTsKCQkJJG9yY2lkX3NwYW4tPmFwcGVuZENoaWxkKCAkc2Vzc2lvbi0+bWFrZV90ZXh0KCAkMSAp
 ICk7CgkJCSRvcmNpZF9saW5rLT5hcHBlbmRDaGlsZCggJG9yY2lkX3NwYW4gKTsJCQkgCgoJCQkk
 cGVyc29uX3NwYW4tPmFwcGVuZENoaWxkKCAkc2Vzc2lvbi0+bWFrZV90ZXh0KCAiICIgKSApOwoJ
-CQkkcGVyc29uX3NwYW4tPmFwcGVuZENoaWxkKCAkb3JjaWRfbGluayApOwoJCX0KCQkkci0+YXBw
-ZW5kQ2hpbGQoICRwZXJzb25fc3BhbiApOwoJfQoJcmV0dXJuIFsgJHIsICJYSFRNTCIgXTsKfQoK
-fQo=
+CQkkcGVyc29uX3NwYW4tPmFwcGVuZENoaWxkKCAkb3JjaWRfbGluayApOwoKCQkJJHBlcnNvbl9z
+cGFuLT5zZXRBdHRyaWJ1dGUoICJjbGFzcyIsICJwZXJzb24gb3JjaWQtcGVyc29uIiApOwoJCX0K
+CQkkci0+YXBwZW5kQ2hpbGQoICRwZXJzb25fc3BhbiApOwoJfQoJcmV0dXJuIFsgJHIsICJYSFRN
+TCIgXTsKfQoKfQo=
 </data>
         </file>
         <file>
@@ -346,9 +347,9 @@ IyMjIyMjIyMjIyMjIyMjIyMjIyMjIwoKMTsK
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>404df9cac359b521fc503639a92bc1e6</hash>
+          <hash>2c41e499fcbc11e138b37dc8212489c2</hash>
           <hash_type>MD5</hash_type>
-          <filesize>792</filesize>
+          <filesize>843</filesize>
           <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpPUkNJRDo6VXRpbHM7Cgp1c2Ugc3RyaWN0OwoKc3ViIGdldF9ub3Jt
 YWxpc2VkX29yY2lkCnsKCW15KCAkdmFsdWUgKSA9IEBfOwoKCSMgd2hhdCBjb3VsZCBhIHVzZXIg
 dHJ5IHRvIHNlYXJjaCB3aXRoOgoJIyBGdWxsIFVSTDogaHR0cDovL29yY2lkLm9yZy8wMDAwLTEy
@@ -360,14 +361,15 @@ CgkjIC4uLj8hCgkjCgkjIFRoZSBSZWdFeHAgY291bGQgYmUgc29tZXRoaW5nIGhvcnJpYmxlIGxp
 a2U6CgkjIG0jXig/OlxzKig/Omh0dHBzPzpcL1wvKT9vcmNpZCg/Olwub3JnXC98OikpPyhcZHs0
 fVwtP1xkezR9XC0/XGR7NH1cLT9cZHszfSg/OlxkfFgpKSg/OlxzKikkIyApCgkjIGJ1dCBJIHRo
 aW5rIHVzaW5nIGEgd29yZCBib3VuZGFyeSBiZWZvcmUgdGhlIE9SQ0lEIGl0c2VsZiBpcyBjbGVh
-bmVyIGFuZCBqdXN0IGFzIGdvb2QuLi4KCSMKCQoJaWYoICR2YWx1ZSA9fiBtL1xiKFxkezR9KVwt
-PyhcZHs0fSlcLT8oXGR7NH0pXC0/KFxkezN9KD86XGR8WCkpLyApCiAgICAgICAgewoJCXJldHVy
-biAiJDEtJDItJDMtJDQiOwoJfQoJZWxzZSAKCXsKCQlyZXR1cm4gMDsKCX0KfQoKMTsK
+bmVyIGFuZCBqdXN0IGFzIGdvb2QuLi4KCSMKCQoJcmV0dXJuIDAgdW5sZXNzIEVQcmludHM6OlV0
+aWxzOjppc19zZXQoICR2YWx1ZSApOwoJaWYoICR2YWx1ZSA9fiBtL1xiKFxkezR9KVwtPyhcZHs0
+fSlcLT8oXGR7NH0pXC0/KFxkezN9KD86XGR8WCkpLyApCiAgICAgICAgewoJCXJldHVybiAiJDEt
+JDItJDMtJDQiOwoJfQoJZWxzZSAKCXsKCQlyZXR1cm4gMDsKCX0KfQoKMTsK
 </data>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Export/Report/CSV/CreatorsOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>dd25d27446a0b0b2696669d9be19d2ab</hash>
           <hash_type>MD5</hash_type>
           <filesize>1551</filesize>
@@ -797,26 +799,27 @@ RU5ErkJggg==
         </file>
         <file>
           <filename>static/style/auto/orcid_support.css</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>6372497ac5b8eaa1f71b14a63247568c</hash>
+          <mime_type>text/x-asm</mime_type>
+          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
           <hash_type>MD5</hash_type>
-          <filesize>911</filesize>
-          <data encoding='base64'>LnBlcnNvbjpob3ZlcnsKCWJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2E2Y2UzOTsKfQoJCi5v
-cmNpZCBhOmhvdmVyewogICAgICAgIGNvbG9yOiAjYTZjZTM5Owp9Cgoub3JjaWQtaWNvbnsKCXZl
-cnRpY2FsLWFsaWduOiBib3R0b207CglwYWRkaW5nLXJpZ2h0OiA1cHg7Cn0KCi5vcmNpZC1pY29u
-IGltZ3sKCXZlcnRpY2FsLWFsaWduOiB0ZXh0LWJvdHRvbTsgbWFyZ2luOiAwIDRweCAwIDJweDsg
-Cn0KCi5vcmNpZHsKCXBvc2l0aW9uOiByZWxhdGl2ZTsKfQoKLm9yY2lkOmhvdmVyIC5vcmNpZC10
-b29sdGlwewoJdmlzaWJpbGl0eTogdmlzaWJsZTsKCW9wYWNpdHk6IDE7Cn0KCi5vcmNpZCBpbWd7
-Cgl2ZXJ0aWNhbC1hbGlnbjogYm90dG9tOwp9Cgoub3JjaWQtdG9vbHRpcHsKCXZpc2liaWxpdHk6
-IGhpZGRlbjsKCXBvc2l0aW9uOiBhYnNvbHV0ZTsKCWxlZnQ6IC04NXB4OwoJYm90dG9tOiAtMzVw
-eDsKCXotaW5kZXg6IDE7CglvcGFjaXR5OiAwOwoJdHJhbnNpdGlvbjogb3BhY2l0eSAwLjNzOwoJ
-YmFja2dyb3VuZC1jb2xvcjogI0E2Q0UzOTsKCWJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDA7Cgl3
-aGl0ZS1zcGFjZTogcHJlOwoJbWF4LXdpZHRoOiBub25lOwoJdGV4dC1hbGlnbjogY2VudGVyOwoJ
-cGFkZGluZzogNXB4OwoJY29sb3I6ICNmZmY7Cglib3JkZXItcmFkaXVzOiA1cHg7Cn0KCi5vcmNp
-ZC10b29sdGlwOjpiZWZvcmUgewogICAgY29udGVudDogIiI7CiAgICBwb3NpdGlvbjogYWJzb2x1
-dGU7CiAgICB0b3A6IC00NSU7CiAgICBsZWZ0OiA1MCU7CiAgICBtYXJnaW4tbGVmdDogLTVweDsK
-ICAgIGJvcmRlci13aWR0aDogNXB4OwogICAgYm9yZGVyLXN0eWxlOiBzb2xpZDsKICAgIGJvcmRl
-ci1jb2xvcjogdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQgIzAwMDAwMCB0cmFuc3BhcmVudDsKfQo=
+          <filesize>917</filesize>
+          <data encoding='base64'>Lm9yY2lkLXBlcnNvbjpob3ZlcnsKCWJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2E2Y2UzOTsK
+fQoJCi5vcmNpZCBhOmhvdmVyewogICAgICAgIGNvbG9yOiAjYTZjZTM5Owp9Cgoub3JjaWQtaWNv
+bnsKCXZlcnRpY2FsLWFsaWduOiBib3R0b207CglwYWRkaW5nLXJpZ2h0OiA1cHg7Cn0KCi5vcmNp
+ZC1pY29uIGltZ3sKCXZlcnRpY2FsLWFsaWduOiB0ZXh0LWJvdHRvbTsgbWFyZ2luOiAwIDRweCAw
+IDJweDsgCn0KCi5vcmNpZHsKCXBvc2l0aW9uOiByZWxhdGl2ZTsKfQoKLm9yY2lkOmhvdmVyIC5v
+cmNpZC10b29sdGlwewoJdmlzaWJpbGl0eTogdmlzaWJsZTsKCW9wYWNpdHk6IDE7Cn0KCi5vcmNp
+ZCBpbWd7Cgl2ZXJ0aWNhbC1hbGlnbjogYm90dG9tOwp9Cgoub3JjaWQtdG9vbHRpcHsKCXZpc2li
+aWxpdHk6IGhpZGRlbjsKCXBvc2l0aW9uOiBhYnNvbHV0ZTsKCWxlZnQ6IC04NXB4OwoJYm90dG9t
+OiAtMzVweDsKCXotaW5kZXg6IDE7CglvcGFjaXR5OiAwOwoJdHJhbnNpdGlvbjogb3BhY2l0eSAw
+LjNzOwoJYmFja2dyb3VuZC1jb2xvcjogI0E2Q0UzOTsKCWJvcmRlcjogMXB4IHNvbGlkICMwMDAw
+MDA7Cgl3aGl0ZS1zcGFjZTogcHJlOwoJbWF4LXdpZHRoOiBub25lOwoJdGV4dC1hbGlnbjogY2Vu
+dGVyOwoJcGFkZGluZzogNXB4OwoJY29sb3I6ICNmZmY7Cglib3JkZXItcmFkaXVzOiA1cHg7Cn0K
+Ci5vcmNpZC10b29sdGlwOjpiZWZvcmUgewogICAgY29udGVudDogIiI7CiAgICBwb3NpdGlvbjog
+YWJzb2x1dGU7CiAgICB0b3A6IC00NSU7CiAgICBsZWZ0OiA1MCU7CiAgICBtYXJnaW4tbGVmdDog
+LTVweDsKICAgIGJvcmRlci13aWR0aDogNXB4OwogICAgYm9yZGVyLXN0eWxlOiBzb2xpZDsKICAg
+IGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQgIzAwMDAwMCB0cmFuc3BhcmVu
+dDsKfQo=
 </data>
         </file>
         <file>

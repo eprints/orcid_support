@@ -216,6 +216,8 @@ sub run_people_with_orcids
 
 			$person_span->appendChild( $session->make_text( " " ) );
 			$person_span->appendChild( $orcid_link );
+
+			$person_span->setAttribute( "class", "person orcid-person" );
 		}
 		$r->appendChild( $person_span );
 	}

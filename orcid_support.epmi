@@ -8,9 +8,9 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>d64daff44b913665003cd17bccfdd2e1</hash>
+          <hash>09a23f6b91c9b04549c9e1294ca653f7</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5816</filesize>
+          <filesize>5882</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
@@ -50,13 +50,13 @@
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>404df9cac359b521fc503639a92bc1e6</hash>
+          <hash>2c41e499fcbc11e138b37dc8212489c2</hash>
           <hash_type>MD5</hash_type>
-          <filesize>792</filesize>
+          <filesize>843</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Export/Report/CSV/CreatorsOrcid.pm</filename>
-          <mime_type>inode/symlink</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>dd25d27446a0b0b2696669d9be19d2ab</hash>
           <hash_type>MD5</hash_type>
           <filesize>1551</filesize>
@@ -112,10 +112,10 @@
         </file>
         <file>
           <filename>static/style/auto/orcid_support.css</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>6372497ac5b8eaa1f71b14a63247568c</hash>
+          <mime_type>text/x-asm</mime_type>
+          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
           <hash_type>MD5</hash_type>
-          <filesize>911</filesize>
+          <filesize>917</filesize>
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
