@@ -104,6 +104,20 @@
           <filesize>8829</filesize>
         </file>
         <file>
+          <filename>static/images/orcid_16x16.png</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>2dddb203aa38ec94870d3ef2b43921c4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1261</filesize>
+        </file>
+        <file>
+          <filename>static/style/auto/orcid_support.css</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>917</filesize>
+        </file>
+        <file>
           <filename>workflows/user/orcid.xml</filename>
           <mime_type>application/xml</mime_type>
           <hash>811c2964fb050bd30e6a267a50a27b74</hash>
@@ -131,25 +145,25 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.1</version>
+  <version>1.3</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
       <name>
-        <family>Fyson</family>
-        <given>Will</given>
+        <family>Will</family>
+        <given>Fyson</given>
       </name>
       <id>rwf1v07@soton.ac.uk</id>
     </item>
     <item>
       <name>
-        <family>Salter</family>
-        <given>John</given>
+        <family>John</family>
+        <given>Salter</given>
       </name>
       <id>j.salter@leeds.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2017-06-14 13:49:34</datestamp>
+  <datestamp>2017-10-11 10:07:49</datestamp>
   <title>ORCID Support</title>
   <description>The ORCID Support plugin offers a basis for ORCID integration with an EPrints repository. At present the plugin adds an ORCID field to the user profiles along with an ORCID subfield to any specified EPrint fields such as &quot;Creator&quot; or &quot;Editor&quot;. 
 
@@ -159,5 +173,6 @@ Reports, made available via the Generic Reporting Framework, highlights which us
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
   <requirements>The Generic Reporting Framework is required for the ORCID reports.</requirements>
+  <home_page>https://wiki.eprints.org/w/ORCID_Support#ORCID_Support</home_page>
   <icon>images/epm/orcid.png</icon>
 </epm>

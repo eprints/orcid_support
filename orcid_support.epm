@@ -793,6 +793,62 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
 </data>
         </file>
         <file>
+          <filename>static/images/orcid_16x16.png</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>2dddb203aa38ec94870d3ef2b43921c4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1261</filesize>
+          <data encoding='base64'>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZE
+QTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2
+RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVC
+ODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9z
+aCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0
+MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0Qy
+MDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpS
+REY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85Z
+JgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMH
+XAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLs
+v9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjY
+yqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8
+T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJ
+RU5ErkJggg==
+</data>
+        </file>
+        <file>
+          <filename>static/style/auto/orcid_support.css</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>917</filesize>
+          <data encoding='base64'>Lm9yY2lkLXBlcnNvbjpob3ZlcnsKCWJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2E2Y2UzOTsK
+fQoJCi5vcmNpZCBhOmhvdmVyewogICAgICAgIGNvbG9yOiAjYTZjZTM5Owp9Cgoub3JjaWQtaWNv
+bnsKCXZlcnRpY2FsLWFsaWduOiBib3R0b207CglwYWRkaW5nLXJpZ2h0OiA1cHg7Cn0KCi5vcmNp
+ZC1pY29uIGltZ3sKCXZlcnRpY2FsLWFsaWduOiB0ZXh0LWJvdHRvbTsgbWFyZ2luOiAwIDRweCAw
+IDJweDsgCn0KCi5vcmNpZHsKCXBvc2l0aW9uOiByZWxhdGl2ZTsKfQoKLm9yY2lkOmhvdmVyIC5v
+cmNpZC10b29sdGlwewoJdmlzaWJpbGl0eTogdmlzaWJsZTsKCW9wYWNpdHk6IDE7Cn0KCi5vcmNp
+ZCBpbWd7Cgl2ZXJ0aWNhbC1hbGlnbjogYm90dG9tOwp9Cgoub3JjaWQtdG9vbHRpcHsKCXZpc2li
+aWxpdHk6IGhpZGRlbjsKCXBvc2l0aW9uOiBhYnNvbHV0ZTsKCWxlZnQ6IC04NXB4OwoJYm90dG9t
+OiAtMzVweDsKCXotaW5kZXg6IDE7CglvcGFjaXR5OiAwOwoJdHJhbnNpdGlvbjogb3BhY2l0eSAw
+LjNzOwoJYmFja2dyb3VuZC1jb2xvcjogI0E2Q0UzOTsKCWJvcmRlcjogMXB4IHNvbGlkICMwMDAw
+MDA7Cgl3aGl0ZS1zcGFjZTogcHJlOwoJbWF4LXdpZHRoOiBub25lOwoJdGV4dC1hbGlnbjogY2Vu
+dGVyOwoJcGFkZGluZzogNXB4OwoJY29sb3I6ICNmZmY7Cglib3JkZXItcmFkaXVzOiA1cHg7Cn0K
+Ci5vcmNpZC10b29sdGlwOjpiZWZvcmUgewogICAgY29udGVudDogIiI7CiAgICBwb3NpdGlvbjog
+YWJzb2x1dGU7CiAgICB0b3A6IC00NSU7CiAgICBsZWZ0OiA1MCU7CiAgICBtYXJnaW4tbGVmdDog
+LTVweDsKICAgIGJvcmRlci13aWR0aDogNXB4OwogICAgYm9yZGVyLXN0eWxlOiBzb2xpZDsKICAg
+IGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQgIzAwMDAwMCB0cmFuc3BhcmVu
+dDsKfQo=
+</data>
+        </file>
+        <file>
           <filename>workflows/user/orcid.xml</filename>
           <mime_type>application/xml</mime_type>
           <hash>811c2964fb050bd30e6a267a50a27b74</hash>
@@ -982,25 +1038,25 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.1</version>
+  <version>1.3</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
       <name>
-        <family>Fyson</family>
-        <given>Will</given>
+        <family>Will</family>
+        <given>Fyson</given>
       </name>
       <id>rwf1v07@soton.ac.uk</id>
     </item>
     <item>
       <name>
-        <family>Salter</family>
-        <given>John</given>
+        <family>John</family>
+        <given>Salter</given>
       </name>
       <id>j.salter@leeds.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2017-06-14 13:49:34</datestamp>
+  <datestamp>2017-10-11 10:07:49</datestamp>
   <title>ORCID Support</title>
   <description>The ORCID Support plugin offers a basis for ORCID integration with an EPrints repository. At present the plugin adds an ORCID field to the user profiles along with an ORCID subfield to any specified EPrint fields such as &quot;Creator&quot; or &quot;Editor&quot;. 
 
@@ -1010,5 +1066,6 @@ Reports, made available via the Generic Reporting Framework, highlights which us
 
 If you would like to contribute towards the plugin, please feel free to contact us at rwf1v07@soton.ac.uk or jb4@ecs.soton.ac.uk</description>
   <requirements>The Generic Reporting Framework is required for the ORCID reports.</requirements>
+  <home_page>https://wiki.eprints.org/w/ORCID_Support#ORCID_Support</home_page>
   <icon>images/epm/orcid.png</icon>
 </epm>
