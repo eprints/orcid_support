@@ -31,4 +31,27 @@ sub get_normalised_orcid
 	}
 }
 
+sub user_with_orcid
+{
+        my( $repo, $orcid ) = @_;
+	
+	print STDERR "get a user... $orcid\n";
+        my $dataset = $repo->dataset( "user" );
+
+        $orcid = $repo->get_database->ci_lookup(
+                $dataset->field( "orcid" ),
+                $orcid
+        );
+
+        my $results = $dataset->search(
+                filters => [
+                        {
+                                meta_fields => [qw( orcid )],
+                                value => $orcid, match => "EX"
+                        }
+                ]);
+
+        return $results->item( 0 );
+}
+
 1;

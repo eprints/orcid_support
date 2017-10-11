@@ -77,6 +77,7 @@ sub ajax_user
                         summary => EPrints::XML::to_string( $frag ),
 #                       grouping => sprintf( "%s", $user->value( SOME_FIELD ) ),
                         problems => [ $self->validate_dataobj( $user ) ],
+			bullets => [ $self->bullet_points( $user ) ],
                 };
         });
         print $self->to_json( $json );
@@ -92,4 +93,21 @@ sub validate_dataobj
 
         return @problems;
 }
+
+sub bullet_points
+{
+        my( $self, $user ) = @_;
+
+        my $repo = $self->{repository};
+
+        my @bullets;
+
+        if( $user->is_set( "orcid" ) )
+        {
+                push @bullets, EPrints::XML::to_string( $repo->html_phrase( "user_with_orcid", orcid => $repo->xml->create_text_node( $user->get_value( "orcid" ) ) ) );
+        }
+
+        return @bullets;
+}
+
                        
