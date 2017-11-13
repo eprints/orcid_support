@@ -10,6 +10,66 @@ BEGIN {
         @ISA = qw( EPrints::MetaField::Id );
 }
 
+sub get_basic_input_elements
+{
+        my( $self, $session, $value, $basename, $staff, $obj ) = @_;
+
+        my $maxlength = $self->get_max_input_size;
+        my $size = ( $maxlength > $self->{input_cols} ?
+                                        $self->{input_cols} :
+                                        $maxlength );
+
+
+        my $input;
+        if( defined $self->{render_input} )
+        {
+                $input = $self->call_property( "render_input",
+                        $self,
+                        $session,
+                        $value,
+                        $self->{dataset},
+                        $staff,
+                        undef,
+                        $obj,
+                        $basename );
+        }
+        else
+        {
+                my @classes = (
+                        "ep_form_text",
+                );
+                if( defined($self->{dataset}) )
+                {
+                        push @classes,
+                                join('_', 'ep', $self->{dataset}->base_id, $self->name);
+                }
+		if( $session->config( 'orcid_support_advance', 'disable_input' ) )
+		{
+                	$input = $session->render_noenter_input_field(
+                        	class=> join(' ', @classes),
+	                        name => $basename,
+                	        id => $basename,
+         	                value => $value,
+	                        size => $size,
+                        	maxlength => $maxlength,
+				disabled => "true" );
+		}
+		else
+		{
+ 			$input = $session->render_noenter_input_field(
+                        	class=> join(' ', @classes),
+	                        name => $basename,
+                	        id => $basename,
+         	                value => $value,
+	                        size => $size,
+                        	maxlength => $maxlength );
+		}
+        }
+
+        return [ [ { el=>$input } ] ];
+}
+
+
 sub render_single_value
 {
 	my( $self, $session, $value ) = @_;

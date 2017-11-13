@@ -43,9 +43,9 @@
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>810359b7d802f12e07fd5f5ce2447b68</hash>
+          <hash>bdee48d98434d5c6582f5514b970ccec</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2763</filesize>
+          <filesize>4665</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
