@@ -135,7 +135,7 @@ sub validate_orcid
                 my $rem = $total % 11;
                 my $res = (12 - $rem) % 11;
                 $res = $res == 10 ? "X" : $res;
-                if( $res != $digits[15] )
+                if( ($res eq 'X' && $digits[15] ne 'X') || ($res =~ /\d/ && $res != $digits[15]) )
                 {
                         push @problems, $session->html_phrase( "validate:invalid_orcid_checksum" );
                 }
