@@ -293,7 +293,7 @@ ZF91c2VyIj5Vc2VyPC9lcHA6cGhyYXNlPgoKPC9lcHA6cGhyYXNlcz4KCg==
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>14a1b8534b18be85f62dedbe8a61169e</hash>
+          <hash>b2387df5611046ebc81731da16d6f3c1</hash>
           <hash_type>MD5</hash_type>
           <filesize>4722</filesize>
           <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpNZXRhRmllbGQ6Ok9yY2lkOwoKdXNlIHN0cmljdDsKdXNlIHdhcm5p
@@ -325,7 +325,7 @@ aW4oJyAnLCBAY2xhc3NlcyksCgkgICAgICAgICAgICAgICAgICAgICAgICBuYW1lID0+ICRiYXNl
 bmFtZSwKICAgICAgICAgICAgICAgIAkgICAgICAgIGlkID0+ICRiYXNlbmFtZSwKICAgICAgICAg
 CSAgICAgICAgICAgICAgICB2YWx1ZSA9PiAkdmFsdWUsCgkgICAgICAgICAgICAgICAgICAgICAg
 ICBzaXplID0+ICRzaXplLAogICAgICAgICAgICAgICAgICAgICAgICAJbWF4bGVuZ3RoID0+ICRt
-YXhsZW5ndGgsCgkJCQlkaXNhYmxlZCA9PiAidHJ1ZSIgKTsKCQl9CgkJZWxzZQoJCXsKIAkJCSRp
+YXhsZW5ndGgsCgkJCQlyZWFkb25seSA9PiAidHJ1ZSIgKTsKCQl9CgkJZWxzZQoJCXsKIAkJCSRp
 bnB1dCA9ICRzZXNzaW9uLT5yZW5kZXJfbm9lbnRlcl9pbnB1dF9maWVsZCgKICAgICAgICAgICAg
 ICAgICAgICAgICAgCWNsYXNzPT4gam9pbignICcsIEBjbGFzc2VzKSwKCSAgICAgICAgICAgICAg
 ICAgICAgICAgIG5hbWUgPT4gJGJhc2VuYW1lLAogICAgICAgICAgICAgICAgCSAgICAgICAgaWQg
@@ -860,9 +860,9 @@ RU5ErkJggg==
         <file>
           <filename>static/style/auto/orcid_support.css</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
+          <hash>dba9318288433077355a67b974dae962</hash>
           <hash_type>MD5</hash_type>
-          <filesize>917</filesize>
+          <filesize>1020</filesize>
           <data encoding='base64'>Lm9yY2lkLXBlcnNvbjpob3ZlcnsKCWJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2E2Y2UzOTsK
 fQoJCi5vcmNpZCBhOmhvdmVyewogICAgICAgIGNvbG9yOiAjYTZjZTM5Owp9Cgoub3JjaWQtaWNv
 bnsKCXZlcnRpY2FsLWFsaWduOiBib3R0b207CglwYWRkaW5nLXJpZ2h0OiA1cHg7Cn0KCi5vcmNp
@@ -879,7 +879,8 @@ Ci5vcmNpZC10b29sdGlwOjpiZWZvcmUgewogICAgY29udGVudDogIiI7CiAgICBwb3NpdGlvbjog
 YWJzb2x1dGU7CiAgICB0b3A6IC00NSU7CiAgICBsZWZ0OiA1MCU7CiAgICBtYXJnaW4tbGVmdDog
 LTVweDsKICAgIGJvcmRlci13aWR0aDogNXB4OwogICAgYm9yZGVyLXN0eWxlOiBzb2xpZDsKICAg
 IGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQgIzAwMDAwMCB0cmFuc3BhcmVu
-dDsKfQo=
+dDsKfQoKLmVwX2VwcmludF9jcmVhdG9yc19vcmNpZFtyZWFkb25seT0idHJ1ZSJdewogICAgYmFj
+a2dyb3VuZC1jb2xvcjogI2UwZTBlMDsKICAgIGN1cnNvcjogbm90LWFsbG93ZWQ7Cn0K
 </data>
         </file>
         <file>
@@ -1072,7 +1073,7 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.3.1</version>
+  <version>1.3.2</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>

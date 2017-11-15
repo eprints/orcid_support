@@ -43,7 +43,7 @@
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>14a1b8534b18be85f62dedbe8a61169e</hash>
+          <hash>b2387df5611046ebc81731da16d6f3c1</hash>
           <hash_type>MD5</hash_type>
           <filesize>4722</filesize>
         </file>
@@ -113,9 +113,9 @@
         <file>
           <filename>static/style/auto/orcid_support.css</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>b43ceb715e6a699cd994051f34f0d6e8</hash>
+          <hash>dba9318288433077355a67b974dae962</hash>
           <hash_type>MD5</hash_type>
-          <filesize>917</filesize>
+          <filesize>1020</filesize>
         </file>
         <file>
           <filename>workflows/user/orcid.xml</filename>
@@ -145,7 +145,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.3.1</version>
+  <version>1.3.2</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>

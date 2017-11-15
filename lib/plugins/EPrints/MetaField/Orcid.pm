@@ -52,7 +52,7 @@ sub get_basic_input_elements
          	                value => $value,
 	                        size => $size,
                         	maxlength => $maxlength,
-				disabled => "true" );
+				readonly => "true" );
 		}
 		else
 		{
