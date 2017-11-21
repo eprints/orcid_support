@@ -49,8 +49,9 @@
 .orcid-tooltip::before {
     content: "";
     position: absolute;
-    top: -45%;
+    top: 100%;
     left: 50%;
+    height: 18px;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
