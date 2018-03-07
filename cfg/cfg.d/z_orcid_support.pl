@@ -203,7 +203,7 @@ sub run_people_with_orcids
 		{
 			my $orcid_link = $session->make_element( "a", 
 				"class" => "orcid",
-				"href" => "http://orcid.org/$1",
+				"href" => "https://orcid.org/$1",
 				"target" => "_blank",
 			 );
 			$orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png" ) );
