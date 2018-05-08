@@ -58,7 +58,7 @@
     border-color: transparent transparent #000000 transparent;
 }
 
-.ep_eprint_creators_orcid[readonly="true"]{
+.ep_eprint_creators_orcid[readonly="true"], .ep_eprint_editors_orcid[readonly="true"], input.ep_user_orcid[readonly="true"]{
     background-color: #e0e0e0;
     cursor: not-allowed;
 }
