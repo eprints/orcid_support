@@ -233,6 +233,66 @@ KCAkdWwgKTsKCiRzZXNzaW9uLT50ZXJtaW5hdGU7Cgo=
 </data>
         </file>
         <file>
+          <filename>lang/de/phrases/orcid_fields.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>bb4a99f8af854cc2c5e1e249bf68f4c7</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1301</filesize>
+          <data encoding='base64'>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
+RE9DVFlQRSBwaHJhc2VzIFNZU1RFTSAiZW50aXRpZXMuZHRkIj4KPGVwcDpwaHJhc2VzIHhtbG5z
+PSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiB4bWxuczplcHA9Imh0dHA6Ly9lcHJpbnRz
+Lm9yZy9lcDMvcGhyYXNlIiB4bWxuczplcGM9Imh0dHA6Ly9lcHJpbnRzLm9yZy9lcDMvY29udHJv
+bCI+Cgo8IS0tVXNlcnMtLT4KPGVwcDpwaHJhc2UgaWQ9Im1ldGFwYWdlX3RpdGxlX29yY2lkIj5P
+UkNJRDwvZXBwOnBocmFzZT4KCjxlcHA6cGhyYXNlIGlkPSJ1c2VyX2ZpZWxkbmFtZV9vcmNpZCI+
+T1JDSUQ8L2VwcDpwaHJhc2U+CjxlcHA6cGhyYXNlIGlkPSJ1c2VyX2ZpZWxkaGVscF9vcmNpZCI+
+Qml0dGUgZ2ViZW4gU2llIGVpbmUgMTYtc3RlbGxpZ2UgT1JDSUQgZWluLgo8YnIvPkJzcDogPHNw
+YW4gY2xhc3M9ImVwX2Zvcm1fZXhhbXBsZSI+MDAwMC0wMDAzLTE0OTUtNzEyMjwvc3Bhbj4KPC9l
+cHA6cGhyYXNlPgoKPGVwcDpwaHJhc2UgaWQ9InVzZXI6d29ya2Zsb3c6c3RhZ2U6b3JjaWQ6dGl0
+bGUiPk9SQ0lEPC9lcHA6cGhyYXNlPgoKPCEtLUVQcmludHMtLT4KPGVwcDpwaHJhc2UgaWQ9ImVw
+cmludF9maWVsZG5hbWVfY3JlYXRvcnNfb3JjaWQiPk9SQ0lEPC9lcHA6cGhyYXNlPgo8ZXBwOnBo
+cmFzZSBpZD0iZXByaW50X2ZpZWxkbmFtZV9lZGl0b3JzX29yY2lkIj5PUkNJRDwvZXBwOnBocmFz
+ZT4KCjxlcHA6cGhyYXNlIGlkPSJ2aWV3bmFtZV9lcHJpbnRfb3JjaWQiPk9SQ0lEPC9lcHA6cGhy
+YXNlPgo8ZXBwOnBocmFzZSBpZD0ibGliL21ldGFmaWVsZDpqb2luX29yY2lkIj48L2VwcDpwaHJh
+c2U+Cgo8ZXBwOnBocmFzZSBpZD0idmFsaWRhdGU6aW52YWxpZF9vcmNpZF9mb3JtYXQiPlVuZ8O8
+bHRpZ2VzIE9SQ0lELUZvcm1hdC4gRWluZSBPUkNJRCBiZXN0ZWh0IGF1cyB2aWVyLCBkdXJjaCBl
+aW5lbiBCaW5kZXN0cmljaCBnZXRyZW5udGVuIEdydXBwZW4gYXVzIGplIHZpZXIgWmlmZmVybiwg
+ei5CLiAwMDAwLTAwMDMtMTQ5NS03MTIyPC9lcHA6cGhyYXNlPiAKPGVwcDpwaHJhc2UgaWQ9InZh
+bGlkYXRlOmludmFsaWRfb3JjaWRfY2hlY2tzdW0iPlVuZ8O8bHRpZ2UgT1JDSUQtUHLDvGZzdW1t
+ZS4gU2luZCBTaWUgc2ljaGVyLCBkYXNzIGRpZSBPUkNJRCBrb3JyZWt0IGlzdD88L2VwcDpwaHJh
+c2U+Cgo8ZXBwOnBocmFzZSBpZD0ic2VhcmNoZmllbGQ6b3JjaWRfZXJyIj5GZWhsZXJoYWZ0ZXMg
+Rm9ybWF0IGbDvHIgT1JDSUQ8L2VwcDpwaHJhc2U+Cgo8L2VwcDpwaHJhc2VzPgo=
+</data>
+        </file>
+        <file>
+          <filename>lang/de/phrases/orcid_reports.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>b8231d783104564245ec3974cc586b20</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1148</filesize>
+          <data encoding='base64'>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
+RE9DVFlQRSBwaHJhc2VzIFNZU1RFTSAiZW50aXRpZXMuZHRkIj4KPGVwcDpwaHJhc2VzIHhtbG5z
+PSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiB4bWxuczplcHA9Imh0dHA6Ly9lcHJpbnRz
+Lm9yZy9lcDMvcGhyYXNlIiB4bWxuczplcGM9Imh0dHA6Ly9lcHJpbnRzLm9yZy9lcDMvY29udHJv
+bCI+Cgo8ZXBwOnBocmFzZSBpZD0iUGx1Z2luL1NjcmVlbi9SZXBvcnQvT3JjaWQ6dGl0bGUiPk9S
+Q0lEIERhc2hib2FyZDwvZXBwOnBocmFzZT4KCjwhLS0gVXNlcnMgd2l0aCBhbiBPUkNJRCAtLT4K
+PGVwcDpwaHJhc2UgaWQ9IlBsdWdpbi9TY3JlZW4vUmVwb3J0L09yY2lkL1VzZXJPcmNpZDp0aXRs
+ZSI+QmVudXR6ZXIgbWl0IGVpbmVyIE9SQ0lEPC9lcHA6cGhyYXNlPgo8ZXBwOnBocmFzZSBpZD0i
+dXNlcl93aXRoX29yY2lkIj48ZXBjOnBpbiBuYW1lPSJvcmNpZCIgLz48L2VwcDpwaHJhc2U+Cgo8
+IS0tIENyZWF0b3JzIHdpdGggYW4gT1JDSUQgLS0+CjxlcHA6cGhyYXNlIGlkPSJQbHVnaW4vU2Ny
+ZWVuL1JlcG9ydC9PcmNpZC9DcmVhdG9yc09yY2lkOnRpdGxlIj5BdXRvcmVuIG1pdCBlaW5lciBP
+UkNJRDwvZXBwOnBocmFzZT4KCjwhLS0gQWxsIHVzZXJzIHdpdGggYW5kIHdpdGhvdXQgT1JDSURz
+IC0tPgo8ZXBwOnBocmFzZSBpZD0iUGx1Z2luL1NjcmVlbi9SZXBvcnQvT3JjaWQvQWxsVXNlcnNP
+cmNpZDp0aXRsZSI+QWxsZSBCZW51dHplciBtaXQgdW5kIG9obmUgT1JDSURzPC9lcHA6cGhyYXNl
+Pgo8ZXBwOnBocmFzZSBpZD0iY3JlYXRvcl93aXRoX29yY2lkIj48ZXBjOnBpbiBuYW1lPSJjcmVh
+dG9yIiAvPiAtIDxlcGM6cGluIG5hbWU9Im9yY2lkIiAvPjwvZXBwOnBocmFzZT4KPGVwcDpwaHJh
+c2UgaWQ9ImNyZWF0b3Jfbm9fb3JjaWQiPjxlcGM6cGluIG5hbWU9ImNyZWF0b3IiIC8+IC0gS2Vp
+bmUgT1JDSUQ8L2VwcDpwaHJhc2U+Cgo8ZXBwOnBocmFzZSBpZD0ib3JjaWRfbWlzc2luZyI+S2Vp
+bmUgT1JDSUQgaW0gQmVudXR6ZXJwcm9maWwuPC9lcHA6cGhyYXNlPgoKPGVwcDpwaHJhc2UgaWQ9
+ImV4cG9ydGZpZWxkczpvcmNpZF91c2VyIj5CZW51dHplcjwvZXBwOnBocmFzZT4KCjwvZXBwOnBo
+cmFzZXM+Cgo=
+</data>
+        </file>
+        <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
           <mime_type>application/xml</mime_type>
           <hash>161170bc91168d976c3558f6cae1d91f</hash>
@@ -1075,7 +1135,7 @@ Pfu0G+7otI6ISM6d3d4XdiQ4VnbgtSLSjelSRURiU3CISGwKDhGJTcEhIrEpOEQkNgWHiMSm4BCR
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.4</version>
+  <version>1.5</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>

@@ -27,6 +27,20 @@
           <filesize>4706</filesize>
         </file>
         <file>
+          <filename>lang/de/phrases/orcid_fields.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>bb4a99f8af854cc2c5e1e249bf68f4c7</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1301</filesize>
+        </file>
+        <file>
+          <filename>lang/de/phrases/orcid_reports.xml</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>b8231d783104564245ec3974cc586b20</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1148</filesize>
+        </file>
+        <file>
           <filename>lang/en/phrases/orcid_fields.xml</filename>
           <mime_type>application/xml</mime_type>
           <hash>161170bc91168d976c3558f6cae1d91f</hash>
@@ -145,7 +159,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.4</version>
+  <version>1.5</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
