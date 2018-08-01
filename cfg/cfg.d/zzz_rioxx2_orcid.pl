@@ -11,7 +11,7 @@ $c->{rioxx2_value_author} = sub {
 		{
 			push @authors, {
 				author => EPrints::Utils::make_name_string( $_->{name} ),
-				id => "http://orcid.org/$id"
+				id => "https://orcid.org/$id"
 			};
 		} 
 		else

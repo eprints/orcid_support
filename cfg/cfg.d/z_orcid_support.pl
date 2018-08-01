@@ -211,7 +211,7 @@ sub run_people_with_orcids
 			my $orcid_span = $session->make_element( "span", "class" => "orcid-tooltip" );
 	
 			$orcid_span->appendChild( $session->make_text( "ORCID: " ) );
-			$orcid_span->appendChild( $session->make_text( $1 ) );
+			$orcid_span->appendChild( $session->make_text( "https://orcid.org/$1" ) );
 			$orcid_link->appendChild( $orcid_span );			 
 
 			$person_span->appendChild( $session->make_text( " " ) );

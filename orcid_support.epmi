@@ -8,16 +8,16 @@
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>0bd4c62e2d67f966b6eaf6100750029f</hash>
+          <hash>6567f29259c14f04208f61a659643236</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5883</filesize>
+          <filesize>5903</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cfg/cfg.d/zzz_rioxx2_orcid.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>79f8d82a4a36fb4a59865e27f676fd77</hash>
+          <hash>83595cbe1708fadb5f9579f408b1711c</hash>
           <hash_type>MD5</hash_type>
-          <filesize>857</filesize>
+          <filesize>858</filesize>
         </file>
         <file>
           <filename>epm/orcid_support/cgi/users/lookup/name</filename>
@@ -57,9 +57,9 @@
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>inode/symlink</mime_type>
-          <hash>b002dddd2182782139f6f30e46c3c6d8</hash>
+          <hash>b40b593e165824d71dbe13425e5a5f36</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4723</filesize>
+          <filesize>4731</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/ORCID/Utils.pm</filename>
@@ -159,7 +159,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.5</version>
+  <version>1.6</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
