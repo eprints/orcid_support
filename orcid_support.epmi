@@ -50,9 +50,9 @@
         <file>
           <filename>lang/en/phrases/orcid_reports.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>3a8188bf37ec26017efff1c57c76f9c4</hash>
+          <hash>46963c38e3d74edf06fa035f5058195b</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1126</filesize>
+          <filesize>1130</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
@@ -92,23 +92,23 @@
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/AllUsersOrcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>425d0efcb69fc3d4d7c95e2fd0de80e8</hash>
+          <hash>b6093d0ecd8f877b86f866c3ee07fd65</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2207</filesize>
+          <filesize>2275</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>adf9f68fb12f13f5b7e7ee785d9c17c1</hash>
+          <hash>fc6bb93e7672e829c5e2eaeab6cf5809</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3118</filesize>
+          <filesize>3221</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/UserOrcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>266b78f24e134348640000a732f01630</hash>
+          <hash>a17c33a3a2d42b4929d62bc489c0478d</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2602</filesize>
+          <filesize>2702</filesize>
         </file>
         <file>
           <filename>static/images/epm/orcid.png</filename>
@@ -159,7 +159,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.6</version>
+  <version>1.7</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>

@@ -16,6 +16,13 @@ sub new
         $self->{custom_order} = '-title/creators_name';
         $self->{report} = 'orcid-creators';
 
+	$self->{show_compliance} = 0;
+
+	$self->{labels} = {
+                outputs => "eprints"
+        };
+
+
         return $self;
 }
 

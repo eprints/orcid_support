@@ -15,6 +15,10 @@ sub new
         $self->{custom_order} = '-name';
         $self->{report} = 'orcid-all-users';
 
+	$self->{labels} = {
+                outputs => "users"
+        };
+
 	$self->{exportfields} = {
                 orcid_user => [ qw(
                         userid
