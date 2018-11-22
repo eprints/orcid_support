@@ -1,3 +1,5 @@
+This is a *hopefully* temporary fork to fix a few issues and create pull requests back to it's parant
+
 # ORCID Support Plugin
 
 The ORCID Support Plugin provides basic ORCID functionality for an EPrints repository
