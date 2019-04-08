@@ -194,13 +194,13 @@ sub run_people_with_orcids
 
 		}
 	}
-	my $url = $session->config("http_url" );
 
 	foreach my $i (0..$#$creators)
 	{
  
 		my $creator = @$creators[$i];
- 
+	 	my $url = $session->config("rel_path" );
+
 		if( $i > 0 )
 		{
 			#not first item (or only one item)
