@@ -74,91 +74,48 @@ foreach my $field( @{$c->{fields}->{eprint}} )
         		                input_cols => 19,
                         	 	allow_null => 1,
 	                        }
-			));	
+			));
 		}
-	}	
+	}
 }
 
-#automatic update of eprint creator field
+#automatic update of eprint contributor fields ($c->{orcid}->{eprint_fields})
 $c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
 {
-        my( %args ) = @_;
-        my( $repo, $eprint, $changed ) = @args{qw( repository dataobj changed )};
+    my( %args ) = @_;
+    my( $repo, $eprint, $changed ) = @args{qw( repository dataobj changed )};
 
-	return unless $eprint->dataset->has_field( "creators_orcid" );
-	my $creators = $eprint->get_value('creators');
-	my @new_creators;
-	my $update = 0;
+    foreach my $role (@{$c->{orcid}->{eprint_fields}})
+    {
+        return unless $eprint->dataset->has_field( $role."_orcid" );
+        my $contributors = $eprint->get_value("$role");
+        my @new_contributors;
+        my $update = 0;
 
-	foreach my $c (@{$creators})
-	{
-        	my $new_c = $c;
+        foreach my $c (@{$contributors})
+        {
+            my $new_c = $c;
 
-	        #get id and user profile
-                my $email = $c->{id};
-                $email = lc($email) if defined $email;
-                my $user = EPrints::DataObj::User::user_with_email($eprint->repository, $email);
-		if( $user )
-	        {
-        	        if( EPrints::Utils::is_set( $user->value( 'orcid' ) ) ) #user has an orcid
-                	{
-                        	if( !EPrints::Utils::is_set( $c->{orcid} ) ) #creator already has an orcid
-                        	{
-					 #set the orcid
-					 $update = 1;
-					 $new_c->{orcid} = $user->value( 'orcid' );
-				}
-			}
-		}
-  		push( @new_creators, $new_c );
-	}
-	if( $update )
-	{
-		$eprint->set_value("creators", \@new_creators);
-	}
-
-	
-}, priority => 50 );
-
-#automatic update of eprint editor field
-$c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
-{
-        my( %args ) = @_;
-        my( $repo, $eprint, $changed ) = @args{qw( repository dataobj changed )};
-
-	return unless $eprint->dataset->has_field( "editors_orcid" );
-	my $editors = $eprint->get_value('editors');
-	my @new_editors;
-	my $update = 0;
-
-	foreach my $e (@{$editors})
-	{
-        	my $new_e = $e;
-
-	        #get id and user profile
-                my $email = $e->{id};
-                $email = lc($email) if defined $email;
-                my $user = EPrints::DataObj::User::user_with_email($eprint->repository, $email);
-		if( $user )
-	        {
-        	        if( EPrints::Utils::is_set( $user->value( 'orcid' ) ) ) #user has an orcid
-                	{
-                        	if( !EPrints::Utils::is_set( $e->{orcid} ) ) #creator already has an orcid
-                        	{
-					 #set the orcid
-					 $update = 1;
-					 $new_e->{orcid} = $user->value( 'orcid' );
-				}
-			}
-		}
-  		push( @new_editors, $new_e );
-	}
-	if( $update )
-	{
-		$eprint->set_value("editors", \@new_editors);
-	}
-
-	
+            #get id and user profile
+            my $email = $c->{id};
+            $email = lc($email) if defined $email;
+            my $user = EPrints::DataObj::User::user_with_email($eprint->repository, $email);
+            if( $user )
+            {
+                #set the orcid if the user has one and the contributor does not
+                if( (EPrints::Utils::is_set( $user->value( 'orcid' ) )) && !(EPrints::Utils::is_set( $c->{orcid} )) )
+                {
+                    $update = 1;
+                    $new_c->{orcid} = $user->value( 'orcid' );
+                }
+            }
+            push( @new_contributors, $new_c );
+        }
+        if( $update )
+        {
+            $eprint->set_value("$role", \@new_contributors);
+        }
+    }
 }, priority => 50 );
 
 
@@ -173,18 +130,18 @@ sub run_people_with_orcids
  
 	my $session = $state->{session};
 	my $r = $state->{session}->make_doc_fragment;
- 
-	my $creators = $value->[0];
- 
-	foreach my $i (0..$#$creators)
+
+	my $contributors = $value->[0];
+
+	foreach my $i (0..$#$contributors)
 	{
- 
-		my $creator = @$creators[$i];
- 
+
+		my $contributor = @$contributors[$i];
+
 		if( $i > 0 )
 		{
 			#not first item (or only one item)
-			if( $i == $#$creators )
+			if( $i == $#$contributors )
 			{
 				#last item
 				$r->appendChild( $session->make_text( " and " ) );
@@ -196,9 +153,9 @@ sub run_people_with_orcids
 		}
  
 		my $person_span = $session->make_element( "span", "class" => "person" );
-		$person_span->appendChild( $session->render_name( $creator->{name} ) );
- 
-		my $orcid = $creator->{orcid};
+		$person_span->appendChild( $session->render_name( $contributor->{name} ) );
+
+		my $orcid = $contributor->{orcid};
 		if( defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
 		{
 			my $orcid_link = $session->make_element( "a", 
