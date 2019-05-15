@@ -44,4 +44,7 @@
 
 <epp:phrase id="exportfields:orcid_user">User</epp:phrase>
 
+<!-- Misc -->
+<epp:phrase id="cgi/lookup/name:contributed"><small> (contributed to <epc:pin name="count"/> item(s) in this repository)</small></epp:phrase>
+
 </epp:phrases>
