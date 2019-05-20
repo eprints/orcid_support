@@ -2,6 +2,10 @@
 $c->{rioxx2_value_author} = sub {
 	my( $eprint ) = @_;
  
+
+    my $session = $eprint->{session};
+    my $orcid_domain = $session->config( 'orcid_support', 'orcid_domain' );
+
 	my @authors;
 	for( @{ $eprint->value( "creators" ) } )
 	{	
@@ -11,7 +15,7 @@ $c->{rioxx2_value_author} = sub {
 		{
 			push @authors, {
 				author => EPrints::Utils::make_name_string( $_->{name} ),
-				id => "https://orcid.org/$id"
+				id => "https://" . $orcid_domain . "/" . $id
 			};
 		} 
 		else
