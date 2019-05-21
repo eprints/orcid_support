@@ -1,8 +1,8 @@
-package EPrints::Plugin::Screen::Report::Orcid::CreatorsOrcid;
+package EPrints::Plugin::Screen::Report::EPrint::Orcid::CreatorsOrcid;
 
-use EPrints::Plugin::Screen::Report::Orcid;
+use EPrints::Plugin::Screen::Report::EPrint::Orcid;
 
-our @ISA = ( 'EPrints::Plugin::Screen::Report::Orcid' );
+our @ISA = ( 'EPrints::Plugin::Screen::Report::EPrint::Orcid' );
 
 use strict;
 
@@ -12,16 +12,7 @@ sub new
 
         my $self = $class->SUPER::new( %params );
 
-        $self->{datasetid} = 'archive';
-        $self->{custom_order} = '-title/creators_name';
         $self->{report} = 'orcid-creators';
-
-	$self->{show_compliance} = 0;
-
-	$self->{labels} = {
-                outputs => "eprints"
-        };
-
 
         return $self;
 }
@@ -116,5 +107,3 @@ sub validate_dataobj
 
         return @problems;
 }
-
-                       

@@ -1,7 +1,7 @@
-package EPrints::Plugin::Screen::Report::Orcid::AllUsersOrcid;
+package EPrints::Plugin::Screen::Report::User::Orcid::AllUsersOrcid;
 
-use EPrints::Plugin::Screen::Report::Orcid;
-our @ISA = ( 'EPrints::Plugin::Screen::Report::Orcid' );
+use EPrints::Plugin::Screen::Report::User::Orcid;
+our @ISA = ( 'EPrints::Plugin::Screen::Report::User::Orcid' );
 
 use strict;
 
@@ -11,24 +11,7 @@ sub new
 
         my $self = $class->SUPER::new( %params );
 
-        $self->{datasetid} = 'user';
-        $self->{custom_order} = '-name';
         $self->{report} = 'orcid-all-users';
-
-	$self->{labels} = {
-                outputs => "users"
-        };
-
-	$self->{exportfields} = {
-                orcid_user => [ qw(
-                        userid
-                        username
-                        email
-                        name
-                        orcid
-                )],
-        };
-
 
         return $self;
 }
@@ -77,7 +60,7 @@ sub validate_dataobj
         }
         return @problems;
 }
- 
+
 sub bullet_points
 {
         my( $self, $user ) = @_;
@@ -85,11 +68,11 @@ sub bullet_points
         my $repo = $self->{repository};
 
         my @bullets;
- 
+
 	if( $user->is_set( "orcid" ) )
 	{
  		push @bullets, EPrints::XML::to_string( $repo->html_phrase( "user_with_orcid", orcid => $repo->xml->create_text_node( $user->get_value( "orcid" ) ) ) );
 	}
 
         return @bullets;
-}                      
+}

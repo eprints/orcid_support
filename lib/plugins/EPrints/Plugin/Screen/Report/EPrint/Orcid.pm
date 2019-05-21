@@ -1,7 +1,7 @@
-package EPrints::Plugin::Screen::Report::Orcid;
+package EPrints::Plugin::Screen::Report::EPrint::OrcidEPrint;
 
-use EPrints::Plugin::Screen::Report;
-our @ISA = ( 'EPrints::Plugin::Screen::Report' );
+use EPrints::Plugin::Screen::Report::EPrint;
+our @ISA = ( 'EPrints::Plugin::Screen::Report::EPrint' );
 
 use strict;
 
@@ -14,6 +14,10 @@ sub new
         $self->{appears} = [];
         $self->{report} = 'orcid';
         $self->{disable} = 1;
+        $self->{show_compliance} = 0;
+        $self->{datasetid} = 'archive';
+        $self->{custom_order} = '-title/creators_name';
+        $self->{labels} = { outputs => "eprints" };
 
         return $self;
 }
@@ -35,4 +39,3 @@ sub filters
 
         return \@filters;
 }
-
