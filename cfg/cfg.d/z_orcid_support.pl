@@ -23,6 +23,9 @@ $c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::CreatorsOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Export::Report::CSV::CreatorsOrcid"}{params}{disable} = 0;
 
+#Define the orcid domain (can be overwritten by the orcid support advance plugin)
+$c->{orcid_support}->{orcid_domain} = "orcid.org";
+
 #---Users---#
 #add orcid field to the user profile's 
 #but checking first to see if the field is already present in the user dataset before adding it 
@@ -198,12 +201,13 @@ sub run_people_with_orcids
 		my $person_span = $session->make_element( "span", "class" => "person" );
 		$person_span->appendChild( $session->render_name( $creator->{name} ) );
  
+		my $orcid_domain = $session->config( 'orcid_support', 'orcid_domain' );
 		my $orcid = $creator->{orcid};
-		if( defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
+		if( defined $orcid && $orcid =~ m/^(?:\Q$orcid_domain\E\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
 		{
 			my $orcid_link = $session->make_element( "a", 
 				"class" => "orcid",
-				"href" => "https://orcid.org/$1",
+				"href" => "https://" . $orcid_domain . "/" . $1,
 				"target" => "_blank",
 			 );
 			$orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png" ) );
@@ -211,8 +215,8 @@ sub run_people_with_orcids
 			my $orcid_span = $session->make_element( "span", "class" => "orcid-tooltip" );
 	
 			$orcid_span->appendChild( $session->make_text( "ORCID: " ) );
-			$orcid_span->appendChild( $session->make_text( "https://orcid.org/$1" ) );
-			$orcid_link->appendChild( $orcid_span );			 
+			$orcid_span->appendChild( $session->make_text( "https://" . $orcid_domain . "/" . $1 ) );
+			$orcid_link->appendChild( $orcid_span );
 
 			$person_span->appendChild( $session->make_text( " " ) );
 			$person_span->appendChild( $orcid_link );
