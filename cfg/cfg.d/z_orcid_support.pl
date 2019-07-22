@@ -161,6 +161,19 @@ $c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
 	
 }, priority => 50 );
 
+#---Search Fields---#
+# Eprints advanced search
+my $orcid_search_fields = { meta_fields => [] };
+foreach my $role (@{$c->{orcid}->{eprint_fields}})
+{
+    my $field = $role.'_orcid';
+    push @{$orcid_search_fields->{meta_fields}}, $field;
+}
+push @{$c->{search}->{advanced}->{search_fields}}, $orcid_search_fields;
+
+# User search
+my $user_search_field = { meta_fields => [ "orcid" ] };
+push @{$c->{search}->{user}->{search_fields}}, $user_search_field;
 
 #Rendering ORCIDs
 {
