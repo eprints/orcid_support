@@ -35,7 +35,6 @@ sub user_with_orcid
 {
         my( $repo, $orcid ) = @_;
 	
-	print STDERR "get a user... $orcid\n";
         my $dataset = $repo->dataset( "user" );
 
         $orcid = $repo->get_database->ci_lookup(
