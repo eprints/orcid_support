@@ -23,5 +23,6 @@
 <epp:phrase id="validate:invalid_orcid_checksum">Ungültige ORCID-Prüfsumme. Sind Sie sicher, dass die ORCID korrekt ist?</epp:phrase>
 
 <epp:phrase id="searchfield:orcid_err">Fehlerhaftes Format für ORCID</epp:phrase>
+<epp:phrase id="lib/searchfield:orcid_help" ref="user_fieldhelp_orcid" />
 
 </epp:phrases>
