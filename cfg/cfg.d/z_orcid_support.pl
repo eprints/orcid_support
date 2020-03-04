@@ -21,7 +21,6 @@ $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::UserOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::CreatorsOrcid"}{params}{disable} = 0;
-$c->{plugins}{"Export::Report::CSV::CreatorsOrcid"}{params}{disable} = 0;
 
 #---Users---#
 #add orcid field to the user profile's 
