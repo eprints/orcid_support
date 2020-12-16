@@ -199,7 +199,9 @@ sub run_people_with_orcids
 		$person_span->appendChild( $session->render_name( $creator->{name} ) );
  
 		my $orcid = $creator->{orcid};
-		if( defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
+		my $uri = "";
+                $uri = $session->get_request->uri if defined $session->get_request;
+		if( $uri !~ m/exportview/ && $uri !~ m!/export_! && $uri !~ m!/cgi/export/! && defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
 		{
 			my $orcid_link = $session->make_element( "a", 
 				"class" => "orcid",
