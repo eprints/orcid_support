@@ -8,22 +8,27 @@ use strict;
 
 sub new
 {
-        my( $class, %params ) = @_;
+    my( $class, %params ) = @_;
 
-        my $self = $class->SUPER::new( %params );
+    my $self = $class->SUPER::new( %params );
 
-        $self->{datasetid} = 'archive';
-        $self->{custom_order} = '-title/creators_name';
-        $self->{report} = 'orcid-creators';
+    $self->{datasetid} = 'archive';
+    $self->{custom_order} = '-title/creators_name';
+    $self->{report} = 'orcid_creators';
+    $self->{searchdatasetid} = 'archive';
 
 	$self->{show_compliance} = 0;
 
 	$self->{labels} = {
-                outputs => "eprints"
-        };
+        outputs => "eprints"
+    };
 
+    $self->{sconf} = 'orcid_creators';
+    $self->{export_conf} = 'orcid_creators';
+    $self->{sort_conf} = 'orcid_creators';
+    $self->{group_conf} = 'orcid_creators';
 
-        return $self;
+    return $self;
 }
 
 sub items

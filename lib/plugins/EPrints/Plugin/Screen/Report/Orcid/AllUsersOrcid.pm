@@ -13,22 +13,17 @@ sub new
 
         $self->{datasetid} = 'user';
         $self->{custom_order} = '-name';
-        $self->{report} = 'orcid-all-users';
+        $self->{report} = 'orcid_all_users';
+        $self->{searchdatasetid} = 'user';
 
-	$self->{labels} = {
+	    $self->{labels} = {
                 outputs => "users"
         };
 
-	$self->{exportfields} = {
-                orcid_user => [ qw(
-                        userid
-                        username
-                        email
-                        name
-                        orcid
-                )],
-        };
-
+        $self->{sconf} = 'orcid_all_users';
+        $self->{export_conf} = 'orcid_all_users';
+        $self->{sort_conf} = 'orcid_all_users';
+        $self->{group_conf} = 'orcid_all_users';
 
         return $self;
 }
