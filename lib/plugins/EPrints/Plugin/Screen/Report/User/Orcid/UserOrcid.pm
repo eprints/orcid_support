@@ -1,7 +1,7 @@
-package EPrints::Plugin::Screen::Report::Orcid::UserOrcid;
+package EPrints::Plugin::Screen::Report::User::Orcid::UserOrcid;
 
-use EPrints::Plugin::Screen::Report::Orcid;
-our @ISA = ( 'EPrints::Plugin::Screen::Report::Orcid' );
+use EPrints::Plugin::Screen::Report::User::Orcid;
+our @ISA = ( 'EPrints::Plugin::Screen::Report::User::Orcid' );
 
 use strict;
 
@@ -11,25 +11,7 @@ sub new
 
         my $self = $class->SUPER::new( %params );
 
-        $self->{datasetid} = 'user';
-        $self->{custom_order} = '-name';
         $self->{report} = 'orcid-user';
-
-	$self->{show_compliance} = 0;
-
-	$self->{labels} = {
-                outputs => "users"
-        };
-
-	$self->{exportfields} = {
-                orcid_user => [ qw(
-			userid
-			username
-			email
-			name
-			orcid
-                )],
-	};
 
         return $self;
 }
@@ -115,5 +97,3 @@ sub bullet_points
 
         return @bullets;
 }
-
-                       
