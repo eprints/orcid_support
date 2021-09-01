@@ -21,7 +21,6 @@ $c->{plugins}{"Orcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::UserOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::AllUsersOrcid"}{params}{disable} = 0;
 $c->{plugins}{"Screen::Report::Orcid::CreatorsOrcid"}{params}{disable} = 0;
-$c->{plugins}{"Export::Report::CSV::CreatorsOrcid"}{params}{disable} = 0;
 
 #---Users---#
 #add orcid field to the user profile's 
@@ -57,7 +56,7 @@ foreach my $field( @{$c->{fields}->{eprint}} )
 		$orcid_present = 0;
 		for(@{$field->{fields}})
 		{
-		        if( EPrints::Utils::is_set( $_->{name} ) && $_->{name} eq "orcid" )
+		        if( EPrints::Utils::is_set( $_->{sub_name} ) && $_->{sub_name} eq "orcid" )
 		        {
 		                $orcid_present = 1;
 				last;
@@ -173,14 +172,34 @@ sub run_people_with_orcids
  
 	my $session = $state->{session};
 	my $r = $state->{session}->make_doc_fragment;
- 
+
 	my $creators = $value->[0];
- 
+	my $field = $value->[1];
+
+	my $f = $field->get_property( "fields_cache" );
+	my $browse_links = {};
+        my $views = $session->config( "browse_views" );
+
+	foreach my $sub_field ( @{$f} )
+	{
+		if(defined $sub_field->{browse_link}){
+		        my $linkview;
+			foreach my $view ( @{$views} )
+			{
+				$linkview = $view if( $view->{id} eq $sub_field->{browse_link} );
+			}
+			$browse_links->{$sub_field->property("sub_name")}->{view} = $linkview;
+			$browse_links->{$sub_field->property("sub_name")}->{field} = $sub_field;
+
+		}
+	}
+
 	foreach my $i (0..$#$creators)
 	{
  
 		my $creator = @$creators[$i];
- 
+	 	my $url = $session->config("rel_path" );
+
 		if( $i > 0 )
 		{
 			#not first item (or only one item)
@@ -194,9 +213,38 @@ sub run_people_with_orcids
 			        $r->appendChild( $session->make_text( ", " ) );
 			}
 		}
- 
+
 		my $person_span = $session->make_element( "span", "class" => "person" );
-		$person_span->appendChild( $session->render_name( $creator->{name} ) );
+
+		#only looking for browse_link in the name sub field for now... 
+		if(defined($browse_links->{name})){
+			my $linkview = $browse_links->{name}->{view};
+			my $sub_field = $browse_links->{name}->{field};
+			my $link_id = $sub_field->get_id_from_value( $session, $creator->{name} );
+
+			if(
+				(defined $linkview->{fields} && $linkview->{fields} =~ m/,/) ||
+				(defined $linkview->{menus} && scalar(@{$linkview->{menus}}) > 1)
+			  )
+			{
+				# has sub pages
+				$url .= "/view/".$sub_field->{browse_link}."/".
+					EPrints::Utils::escape_filename( $link_id )."/";
+			}
+			else
+			{
+				# no sub pages
+				$url .= "/view/".$sub_field->{browse_link}."/".
+					EPrints::Utils::escape_filename( $link_id ).
+					".html";
+			}
+			my $a = $session->render_link( $url );
+			$a->appendChild( $session->render_name( $creator->{name} ) );
+			$person_span->appendChild( $a );
+		}else{
+			$person_span->appendChild( $session->render_name( $creator->{name} ) );
+		}
+
  
 		my $orcid = $creator->{orcid};
 		my $uri = "";
