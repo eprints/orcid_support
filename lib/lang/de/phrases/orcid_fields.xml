@@ -19,10 +19,10 @@
 <epp:phrase id="viewname_eprint_orcid">ORCID</epp:phrase>
 <epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
 
-<epp:phrase id="validate:invalid_orcid_format">Ungültiges ORCID-Format. Eine ORCID besteht aus vier, durch einen Bindestrich getrennten Gruppen aus je vier Ziffern, z.B. 0000-0003-1495-7122</epp:phrase> 
+<epp:phrase id="validate:invalid_orcid_format">Ungültiges ORCID-Format. Eine ORCID besteht aus vier, durch einen Bindestrich getrennten Gruppen aus je vier Ziffern, z.B. 0000-0003-1495-7122</epp:phrase>
 <epp:phrase id="validate:invalid_orcid_checksum">Ungültige ORCID-Prüfsumme. Sind Sie sicher, dass die ORCID korrekt ist?</epp:phrase>
 
 <epp:phrase id="searchfield:orcid_err">Fehlerhaftes Format für ORCID</epp:phrase>
-<epp:phrase id="lib/searchfield:orcid_help" ref="user_fieldhelp_orcid" />
+<epp:phrase id="lib/searchfield:help_orcid">Geben Sie eine 16-stellige ORCID ein.</epp:phrase>
 
 </epp:phrases>
