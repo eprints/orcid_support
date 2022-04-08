@@ -176,7 +176,6 @@ sub run_people_with_orcids
         }
 
         my $person_span = $session->make_element( "span", "class" => "person" );
-<<<<<<< HEAD
 
         # only looking for browse_link in the name sub field for now... 
         if( defined( $browse_links->{name} ) )
@@ -213,7 +212,7 @@ sub run_people_with_orcids
  
         my $orcid = $contributor->{orcid};
         my $uri = "";
-         $uri = $session->get_request->uri if defined $session->get_request;
+        $uri = $session->get_request->uri if defined $session->get_request;
         if( $uri !~ m/exportview/ && $uri !~ m!/export_! && $uri !~ m!/cgi/export/! && defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
         {
             my $orcid_link = $session->make_element( "a",
@@ -221,7 +220,7 @@ sub run_people_with_orcids
                 "href" => "https://orcid.org/$1",
                 "target" => "_blank",
             );
-            $orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png" ) );
+            $orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png", "alt" => "ORCID logo" ) );
 
             my $orcid_span = $session->make_element( "span", "class" => "orcid-tooltip" );
 
