@@ -1,4 +1,4 @@
-package EPrints::Plugin::Screen::Report::Orcid::CreatorsOrcid;
+package EPrints::Plugin::Screen::Report::Orcid::EditorsOrcid;
 
 use EPrints::Plugin::Screen::Report::Orcid;
 
@@ -13,20 +13,20 @@ sub new
     my $self = $class->SUPER::new( %params );
 
     $self->{datasetid} = 'archive';
-    $self->{custom_order} = '-title/creators_name';
-    $self->{report} = 'orcid_creators';
+    $self->{custom_order} = '-title/editors_name';
+    $self->{report} = 'orcid_editors';
     $self->{searchdatasetid} = 'archive';
 
-	$self->{show_compliance} = 0;
+    $self->{show_compliance} = 0;
 
-	$self->{labels} = {
+    $self->{labels} = {
         outputs => "eprints"
     };
 
-    $self->{sconf} = 'orcid_creators';
-    $self->{export_conf} = 'orcid_creators';
-    $self->{sort_conf} = 'orcid_creators';
-    $self->{group_conf} = 'orcid_creators';
+    $self->{sconf} = 'orcid_editors';
+    $self->{export_conf} = 'orcid_editors';
+    $self->{sort_conf} = 'orcid_editors';
+    $self->{group_conf} = 'orcid_editors';
 
     return $self;
 }
@@ -35,7 +35,7 @@ sub items
 {
         my( $self ) = @_;
 
-	my $list = $self->SUPER::items();
+        my $list = $self->SUPER::items();
 
         if( defined $list )
         {
@@ -44,12 +44,12 @@ sub items
                 $list->map(sub{
                         my($session, $dataset, $eprint) = @_;
 
-                        if( $eprint->is_set("creators_orcid") )
+                        if( $eprint->is_set("editors_orcid") )
                         {
                                 push @ids, $eprint->id;
                         }
                 });
-		my $ds = $self->{session}->dataset( $self->{datasetid} );
+        my $ds = $self->{session}->dataset( $self->{datasetid} );
                 my $results = $ds->list(\@ids);
                 return $results;
 
@@ -95,15 +95,15 @@ sub bullet_points
 
         my @bullets;
 
-        foreach my $creator( @{ $eprint->value( "creators" ) } )
+        foreach my $editor( @{ $eprint->value( "editors" ) } )
         {
-                if( EPrints::Utils::is_set( $creator->{orcid} ) )
+                if( EPrints::Utils::is_set( $editor->{orcid} ) )
                 {
-                        push @bullets, EPrints::XML::to_string( $repo->html_phrase( "contributor_with_orcid", contributor => $repo->xml->create_text_node(EPrints::Utils::make_name_string( $creator->{name} ) ), orcid => $repo->xml->create_text_node( $creator->{orcid} ) ) );
+                        push @bullets, EPrints::XML::to_string( $repo->html_phrase( "contributor_with_orcid", contributor => $repo->xml->create_text_node(EPrints::Utils::make_name_string( $editor->{name} ) ), orcid => $repo->xml->create_text_node( $editor->{orcid} ) ) );
                 }
                 else
                 {
-                        push @bullets, EPrints::XML::to_string( $repo->html_phrase( "contributor_no_orcid", contributor => $repo->xml->create_text_node(EPrints::Utils::make_name_string( $creator->{name} ) ) ) );
+                        push @bullets, EPrints::XML::to_string( $repo->html_phrase( "contributor_no_orcid", contributor => $repo->xml->create_text_node(EPrints::Utils::make_name_string( $editor->{name} ) ) ) );
                 }
         }
 
