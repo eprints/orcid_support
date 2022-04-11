@@ -220,7 +220,7 @@ sub run_people_with_orcids
                 "href" => "https://orcid.org/$1",
                 "target" => "_blank",
             );
-            $orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_16x16.png", "alt" => "ORCID logo" ) );
+            $orcid_link->appendChild( $session->make_element( "img", "src" => "/images/orcid_id.svg", "class" => "orcid-icon", "alt" => "ORCID logo" ) );
 
             my $orcid_span = $session->make_element( "span", "class" => "orcid-tooltip" );
 

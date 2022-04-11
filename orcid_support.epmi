@@ -9,17 +9,17 @@
           <datasetid>document</datasetid>
           <filename>epm/orcid_support/cfg/cfg.d/z_orcid_support.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>5354f6b111adba50910a5b8cdbab4cd7</hash>
+          <hash>162ef69bb7920d601fc608edc823669a</hash>
           <hash_type>MD5</hash_type>
-          <filesize>7290</filesize>
+          <filesize>7569</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>epm/orcid_support/cfg/cfg.d/zz_orcid_support_reports.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>51b3b4bec734326a49cae7981b6682b3</hash>
+          <hash>e05723f634d8b98f55972950d618c3b2</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2173</filesize>
+          <filesize>2650</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -33,49 +33,33 @@
           <datasetid>document</datasetid>
           <filename>epm/orcid_support/cgi/users/lookup/name</filename>
           <mime_type>text/plain</mime_type>
-          <hash>feb19a5babb64f1a97006a181db15d57</hash>
+          <hash>75c0a09b35b5d9d1a4db5899cdbdcd06</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4706</filesize>
+          <filesize>6620</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
-          <filename>lang/de/phrases/orcid_fields.xml</filename>
+          <filename>lang/de/phrases/z_orcid_support.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>1e8c1ec687851a31212f98bbda363cb4</hash>
+          <hash>0fda528bc89ed72eddc9393af043cd69</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1375</filesize>
+          <filesize>2582</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
-          <filename>lang/de/phrases/orcid_reports.xml</filename>
+          <filename>lang/en/phrases/z_orcid_support.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>b8231d783104564245ec3974cc586b20</hash>
+          <hash>412c0ae24c4597aa7f96559e383498fb</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1148</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>lang/en/phrases/orcid_fields.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>4f22fe0867b9413ca0467d495bc9de14</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1309</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>lang/en/phrases/orcid_reports.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>2a0597aca4928b1363232951a30fb7a1</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1513</filesize>
+          <filesize>3156</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>b40b593e165824d71dbe13425e5a5f36</hash>
+          <hash>dfae4ace28b3f211e5b3afd11ff5ae6f</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4731</filesize>
+          <filesize>4749</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -92,6 +76,14 @@
           <hash>dd25d27446a0b0b2696669d9be19d2ab</hash>
           <hash_type>MD5</hash_type>
           <filesize>1551</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Export/Report/CSV/EditorsOrcid.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>1232ee176a3edba9e2ecf0a17ea4c9e9</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1539</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -121,9 +113,17 @@
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/CreatorsOrcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>65280865893ddd22dc05263627914088</hash>
+          <hash>36f98d3c636463f20b2a83bd0cd59be5</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3398</filesize>
+          <filesize>3389</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Screen/Report/Orcid/EditorsOrcid.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>15c3addee41f20ad844d16629a0698ee</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>3394</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -151,11 +151,19 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>static/images/orcid_id.svg</filename>
+          <mime_type>image/svg+xml</mime_type>
+          <hash>9467c77e7a6426087722c0712ed02b17</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>983</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>static/style/auto/orcid_support.css</filename>
           <mime_type>text/x-asm</mime_type>
-          <hash>e1a34835452903d01f4c6a8c8a778c45</hash>
+          <hash>e6187ec32ff1ed2b8bc0f4fd85bc3ed7</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1119</filesize>
+          <filesize>1159</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -187,7 +195,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.8</version>
+  <version>2.0</version>
   <controller>EPMC::Orcid</controller>
   <creators>
     <item>
@@ -210,6 +218,12 @@
         <given>Rory</given>
       </name>
       <id>Rory.McNicholl@london.ac.uk</id>
+    </item>
+    <item>
+      <name>
+        <family>Muller</family>
+        <given>Dennis</given>
+      </name>
     </item>
   </creators>
   <datestamp>2019-04-08 22:25:04</datestamp>

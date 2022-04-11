@@ -8,7 +8,9 @@
 
 .orcid-icon{
 	vertical-align: bottom;
-	padding-right: 5px;
+    padding-right: 0px;
+	margin-right: 5px;
+    width: 16px;
 }
 
 .orcid-icon img{
