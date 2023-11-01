@@ -18,7 +18,11 @@
 <epp:phrase id="eprint_fieldname_editors_orcid">ORCID</epp:phrase>
 
 <epp:phrase id="viewname_eprint_orcid">ORCID</epp:phrase>
-<epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
+
+<!-- remember to include spaces in the 'join' phrases if needed -->
+<epp:phrase id="lib/metafield:join_orcid">, </epp:phrase>
+<epp:phrase id="lib/metafield:join_orcid.last"> and </epp:phrase>
+<!-- <epp:phrase id="lib/metafield:join_orcid.first"> ??? </epp:phrase> -->
 
 <epp:phrase id="validate:invalid_orcid_format">Invalid ORCID format. ORCID should be 4 groups of 4 digits separated by hyphens, e.g. 0000-0003-1495-7122</epp:phrase>
 <epp:phrase id="validate:invalid_orcid_checksum">Invalid ORCID checksum. Are you sure the ORCID is correct?</epp:phrase>

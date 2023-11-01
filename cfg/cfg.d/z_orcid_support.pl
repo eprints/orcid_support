@@ -160,20 +160,25 @@ sub run_people_with_orcids
         my $url = $session->config( "rel_path" );
 
         my $contributors = $value->[0];
+	my $phraseid = "lib/metafield:join_orcid";
 
-        if( $i > 0 )
-        {
-            # not first item (or only one item)
-            if( $i == $#$contributors )
-            {
-                # last item
-                $r->appendChild( $session->make_text( " and " ) );
-            }
-            else
-            {
-                $r->appendChild( $session->make_text( ", " ) );
-            }
-        }
+	# don't 'join' the first person
+	if( $i > 0 )
+	{
+		#if we're the last person
+		if( $i == $#$creators && $session->get_lang->has_phrase( "$phraseid.last", $session ) )
+		{
+			$phraseid .= ".last";
+		}
+		elsif( $i == 1 && $session->get_lang->has_phrase( "$phraseid.first", $session ) )
+		{
+			# this is the 'first joiner' rather than the first author
+			$phraseid .= ".first";
+		}
+
+		# add the phrase to the existing elements - before 'this person' is added
+		$r->appendChild( $session->html_phrase( $phraseid ) );
+	}
 
         my $person_span = $session->make_element( "span", "class" => "person" );
 

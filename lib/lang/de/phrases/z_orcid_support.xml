@@ -18,7 +18,13 @@
 <epp:phrase id="eprint_fieldname_editors_orcid">ORCID</epp:phrase>
 
 <epp:phrase id="viewname_eprint_orcid">ORCID</epp:phrase>
-<epp:phrase id="lib/metafield:join_orcid"></epp:phrase>
+
+<!-- remember to include spaces in the 'join' phrases if needed -->
+<epp:phrase id="lib/metafield:join_orcid">; </epp:phrase>
+<!-- 
+  <epp:phrase id="lib/metafield:join_orcid.last"> and </epp:phrase>
+  <epp:phrase id="lib/metafield:join_orcid.first"> ??? </epp:phrase>
+-->
 
 <epp:phrase id="validate:invalid_orcid_format">Ungültiges ORCID-Format. Eine ORCID besteht aus vier, durch einen Bindestrich getrennten Gruppen aus je vier Ziffern, z.B. 0000-0003-1495-7122</epp:phrase>
 <epp:phrase id="validate:invalid_orcid_checksum">Ungültige ORCID-Prüfsumme. Sind Sie sicher, dass die ORCID korrekt ist?</epp:phrase>
