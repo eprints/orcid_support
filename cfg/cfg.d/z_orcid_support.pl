@@ -133,7 +133,7 @@ sub run_people_with_orcids
     my $session = $state->{session};
     my $r = $state->{session}->make_doc_fragment;
 
-    my $contributors = $value->[0];
+    my $people = $value->[0];
     my $field = $value->[1];
 
     my $f = $field->get_property( "fields_cache" );
@@ -154,25 +154,24 @@ sub run_people_with_orcids
         }
     }
 
-    foreach my $i ( 0..$#$contributors )
+    foreach my $i ( 0..$#$people )
     {
-        my $contributor = @$contributors[$i];
+        my $person = @$people[$i];
         my $url = $session->config( "rel_path" );
 
-        my $contributors = $value->[0];
 	my $phraseid = "lib/metafield:join_orcid";
 
 	# don't 'join' the first person
 	if( $i > 0 )
 	{
 		#if we're the last person
-		if( $i == $#$creators && $session->get_lang->has_phrase( "$phraseid.last", $session ) )
+		if( $i == $#$people && $session->get_lang->has_phrase( "$phraseid.last", $session ) )
 		{
 			$phraseid .= ".last";
 		}
 		elsif( $i == 1 && $session->get_lang->has_phrase( "$phraseid.first", $session ) )
 		{
-			# this is the 'first joiner' rather than the first author
+			# this is the 'first joiner' rather than the first person
 			$phraseid .= ".first";
 		}
 
@@ -187,7 +186,7 @@ sub run_people_with_orcids
         {
             my $linkview = $browse_links->{name}->{view};
             my $sub_field = $browse_links->{name}->{field};
-            my $link_id = $sub_field->get_id_from_value( $session, $contributor->{name} );
+            my $link_id = $sub_field->get_id_from_value( $session, $person->{name} );
 
             if(
                 ( defined $linkview->{fields} && $linkview->{fields} =~ m/,/ ) ||
@@ -206,16 +205,16 @@ sub run_people_with_orcids
                 ".html";
             }
             my $a = $session->render_link( $url );
-            $a->appendChild( $session->render_name( $contributor->{name} ) );
+            $a->appendChild( $session->render_name( $person->{name} ) );
             $person_span->appendChild( $a );
         }
         else
         {
-            $person_span->appendChild( $session->render_name( $contributor->{name} ) );
+            $person_span->appendChild( $session->render_name( $person->{name} ) );
         }
 
  
-        my $orcid = $contributor->{orcid};
+        my $orcid = $person->{orcid};
         my $uri = "";
         $uri = $session->get_request->uri if defined $session->get_request;
         if( $uri !~ m/exportview/ && $uri !~ m!/export_! && $uri !~ m!/cgi/export/! && defined $orcid && $orcid =~ m/^(?:orcid.org\/)?(\d{4}\-\d{4}\-\d{4}\-\d{3}(?:\d|X))$/ )
