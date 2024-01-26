@@ -45,7 +45,7 @@ foreach my $role (@{$session->config( "orcid","eprint_fields" )})
         " AND $Q_name_table.$Q_pos=$Q_id_table.$Q_pos " .
         " LEFT JOIN $Q_orcid_table" .
         " ON $Q_name_table.$Q_eprintid=$Q_orcid_table.$Q_eprintid " .
-        " AND $Q_name_table.$Q_pos=$Q_orcid_table.$Q_pos " .
+        " OR $Q_name_table.$Q_pos=$Q_orcid_table.$Q_pos " .
         " WHERE " .
         " $Q_table.$Q_eprint_status=".$database->quote_value( "archive" );
     if( EPrints::Utils::is_set( $family ) )
