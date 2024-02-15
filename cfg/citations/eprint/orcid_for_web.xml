@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
+    <epc:comment>
+        This is an xml snippet used by EPrints::Script::Compiled::run_people_with_orcids
+        which is a subroutine in the EPrints::Script::Compiled package namespace,
+        added to the namespace at the local archive level via inclusion
+        in the file z_orcid_support.pl in the cfg/cfg.d folder
+        - i.e. cfg/cfg.d/z_orcid_support.pl
+
+        The xml snippet below is used to dictate how an ORCID link is rendered.
+        It governs the presentation of the link to orcid.org via a badge,
+        that is rendered next to a person's name.
+        It does not govern the presentation of a person's name.
+
+        It is assumed this citation will be used in web page renderings.
+
+        For example:
+
+            $eprint->render_citation($citation_style); # Will use orcid_for_web.xml by default.
+
+        A flag can be passed to any method rendering a citation,
+        to indicate a different context.
+
+        For example:
+
+            $eprint->render_citation($citation_style, for_use_in => 'email'); # Will use orcid_for_email.xml by default.
+
+        So far, email, coversheet and csv are the other recognised contexts,
+        for which you will wish to look at their respective files:
+        cfg/citations/eprint/orcid_for_email.xml
+        cfg/citations/eprint/orcid_for_coversheet.xml
+        cfg/citations/eprint/orcid_for_csv.xml
+
+        When using strings passed as citation arguments within the citation below,
+        it is better to use {$string.as_string()} instead of simply {$string},
+        in order to avoid the error:
+        [No type for value 'Some stuff inside string' from '$string']
+    </epc:comment>
+    <a class="orcid" href="https://orcid.org/{$valid_orcid.as_string()}" target="_blank">
+        <img src="{$static_folder.as_string()}/images/orcid_id.svg" class="orcid-icon" alt="ORCID logo"/>
+        <span class="orcid-tooltip">ORCID: https://orcid.org/<epc:print expr="$valid_orcid.as_string()"/></span>
+    </a>
+</cite:citation>
