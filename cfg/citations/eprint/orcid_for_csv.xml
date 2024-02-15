@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
+    <epc:comment>
+        This is an xml snippet used by EPrints::Script::Compiled::run_people_with_orcids
+        which is a subroutine in the EPrints::Script::Compiled package namespace,
+        added to the namespace at the local archive level via inclusion
+        in the file z_orcid_support.pl in the cfg/cfg.d folder
+        - i.e. cfg/cfg.d/z_orcid_support.pl
+
+        The xml snippet below is used to dictate how an ORCID link is rendered.
+        It governs the presentation of the link to orcid.org via a badge,
+        that is rendered next to a person's name.
+        It does not govern the presentation of a person's name.
+
+        This citation is only used by method calls to
+        render_citation, render_citation_link or render_citation_link_staff,
+        that include a...
+
+            for_use_in => 'csv',
+
+        ...argument / option / parameter.
+        For example:
+
+            $eprint->render_citation($citation_style, for_use_in => 'csv');
+
+        When using strings passed as citation arguments in the citation below,
+        it is better to use {$string.as_string()} instead of simply {$string},
+        in order to avoid the error:
+        [No type for value 'Some stuff inside string' from '$string']
+    </epc:comment>
+    ORCID: https://orcid.org/<epc:print expr="$valid_orcid.as_string()"/>
+</cite:citation>
